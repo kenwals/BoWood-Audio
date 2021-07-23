@@ -1,12 +1,15 @@
 html {
-    height: 100;;
-}
-
-body{
-    background: url('/media/homepage_background.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: white:
+    color: white;
     background-color: black;
     /* font-family */
+}
+
+.navbar {
+    background-color: black;
+    color: white ;
+}
+
+// this is a white icon with 50% opacity
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;..");
 }
