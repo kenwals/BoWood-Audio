@@ -1,7 +1,11 @@
+html{
+  height: 100%;
+}
+
 body {
-    color: white;
-    background-color: black;
-    /* font-family */
+  color: white;
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navbar {
