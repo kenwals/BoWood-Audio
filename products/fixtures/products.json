@@ -1,0 +1,30 @@
+[
+{
+"pk": 1,
+"model": "products.product",
+"fields": {
+"sku": "pp5001340155",
+"name": "BoWood Audio 50 euro Gift Voucher",
+"description": "Can't decide what gift to get someone? this voucher is perfect.",
+"price": 50.00,
+"category": 1,
+"rating": 4.6,
+"image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+"image": "DP0709201205510679M.jpg"
+}
+},
+{
+"pk": 2,
+"model": "products.product",
+"fields": {
+"sku": "pp5001600425",
+"name": "BoWood Audio Tea Towel",
+"description": "100 % cotten tea towel ",
+"price": 8.99,
+"category": 2,
+"rating": 4.6,
+"image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+"image": "DP0113201617034987M.jpg"
+}
+}
+]
