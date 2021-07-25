@@ -22,3 +22,7 @@ body {
   max-height: 768px;
   min-width: auto;
 }
+
+.card {
+  background-color: black;
+}
