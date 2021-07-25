@@ -75,9 +75,9 @@
                         Shop
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="{% url 'products' %}">view all products</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}">All Items</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=voucher">Gift Vouchers</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=mechandise">Merchandise</a></li>
                       </ul>
                     </li>
                     <li class="list-inline-item dropdown">
