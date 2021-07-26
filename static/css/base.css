@@ -8,6 +8,11 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+.theme-bowood{
+  background-color: black;
+  color: white;
+}
+
 .navbar {
     background-color: black;
     color: white ;

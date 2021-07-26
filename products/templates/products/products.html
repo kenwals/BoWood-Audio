@@ -15,8 +15,8 @@
   <div class="row mt-5 pt-2">
     <div class="col-md-6 order-md-last">
         <form class="d-flex offset-sm-2 maximum-width" method="GET" action="{% url 'products' %}">
-            <input class="form-control me-2" name="q" type="search" placeholder="Search for a product" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2 theme-bowood" name="q" type="search" placeholder="Search for a product" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
     </div>
       <div class="col-md-6 order-md-first text-center">
@@ -39,7 +39,7 @@
                     {% endif %}
             </div>
             <div class="col-6 d-flex justify-content-end ">
-                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                    <select id="sort-selector" class="theme-bowood custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                         <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                         <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                         <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -68,7 +68,7 @@
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ product.name }}</p>
                             </div>
-                            <div class="card-footer bg-white pt-0 border-0 text-left">
+                            <div class="card-footer pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
                                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
