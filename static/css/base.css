@@ -43,3 +43,8 @@ body {
 .maximum-width{
   max-width: 33rem;
 } /* this keeps sections narrow for smaller screens */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
