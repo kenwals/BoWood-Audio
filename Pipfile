@@ -9,6 +9,7 @@ django-allauth = "==0.41.0"
 pillow = "*"
 crispy-bootstrap5 = "*"
 django-crispy-forms = "*"
+stripe = "*"
 
 [dev-packages]
 
