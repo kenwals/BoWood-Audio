@@ -10,6 +10,7 @@ pillow = "*"
 crispy-bootstrap5 = "*"
 django-crispy-forms = "*"
 stripe = "*"
+django-countries = "*"
 
 [dev-packages]
 
