@@ -61,11 +61,18 @@ input[name='q']::placeholder {
 
 /* ------------------------------- bootstrap toasts */
 
+.toast, .toast-header{
+  background-color: black;
+  color : white;
+}
+
 .message-container {
   position: fixed;
   top: 72px;
   right: 15px;
   z-index: 99999999999;
+  background-color: black;
+  color : white;
 }
 
 .custom-toast {
@@ -76,6 +83,10 @@ input[name='q']::placeholder {
   height: 2px;
 }
 
+
+.btn-white{
+  color: white;
+}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -126,6 +137,8 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: black;
+  color: white;
 }
 
 
