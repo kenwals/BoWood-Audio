@@ -4,6 +4,10 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 
 ## UX
 
+### Scope
+
+The time allocated to build this project was shorter then previous projects, luckily for me the site owner is very flexible with the scope. The site will be first made to an MVP, and if there is additional time, content/features can be added.
+
 ### Visitor Goals
 
 1. As a visitor to this site, I want to see what services are available so I can decide if I want to do business here.
@@ -20,6 +24,32 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 4. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
 5. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
 
+
+### Structure
+
+This full stack site is put together with HTML, using the bootstrap framework along with some CSS.
+
+The Database is integrated using Python and Django fronted onto a PostgreSQL backend.
+
+### Skeleton
+
+The page content is dynamic and composed of Jinja templates which are put together using Python Django.
+
+#### Website page line up / Flask templates
+
+- Home / Index
+
+- Login / Logout
+
+- Register new user
+
+- Profile / My details / Edit my Contact details
+
+- All products
+
+- product details
+
+- shopping cart
 
 ### Database Schema
 
