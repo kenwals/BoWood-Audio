@@ -53,6 +53,43 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 ### Database Schema
 
+#### Relational Database tables schema
+
+##### Products table
+
+```bash
+_ID: (auto-generated) ObjectId PRIMARY KEY (Not changeable)
+name : STRING
+
+```
+
+#### Wireframes
+
+
+### Surface
+
+#### Colours
+
+Dark mode
+
+#BB3C2B - red
+
+#F5CA9F  - biege
+
+#CCB19E - gold
+
+#### Icons
+
+Font Awescome is used for icons
+
+#### Images
+
+images are sourced from unsplash and site owner.
+
+#### Fonts
+
+The font used is Oswald from Google fonts.
+
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
@@ -70,9 +107,53 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+### Frontend
 
-- Python Django
+#### Languages
+
+- HTML
+- CSS
+- Python
+- JavaScript/Jquery
+
+#### Libraries and Frameworks
+
+- [Bootstrap](https://getbootstrap.com/)
+- Django
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+
+- [PyMongo](https://pymongo.readthedocs.io/en/stable/)
+- Fonts : [Google Fonts](https://fonts.google.com/)
+- Icons : FA
+
+#### Tools
+
+- JSfiddle : I used this online sandbox to build and play code before i adding to the project.
+- [Python Tutor](http://pythontutor.com/): I used this very handy online sandbox for experimenting with Python code before applying to this project.
+- Wireframe: [Balsamiq](https://balsamiq.com/)
+- DB Schema diagram : Drawsql.app
+- IDE: Visual Studio Code (VS Code).
+- Version control: Git
+- Browser Developer tools : [Google Chrome](https://www.google.com/chrome) for console.logging everything.
+- Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
+- Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
+- Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
+- File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
+- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj)
+- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/) **
+- Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
+- Auto formatter for HTML, CSS and JS:  [webformatter](https://webformatter.com/html)
+- px to rem convertor : [nekoCalc](https://nekocalc.com/px-to-rem-converter)
+- JavaScript linter : [jshint](https://jshint.com/)
+- Python linter :  [Pep8 online](http://pep8online.com/)
+- markdown linter : markdownlint extension on VS Code.
+- Colour names : [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
+- Colour swatches : [Coolors](https://coolors.co/)
+- [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
+- [site preview tool](http://ami.responsivedesign.is/)
+- [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
+
+
 
 
 ## Testing
