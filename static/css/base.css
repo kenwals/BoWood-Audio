@@ -13,7 +13,7 @@ body {
   color: white;
 }
 
-.navbar {
+.navbar, .table {
     background-color: black;
     color: white ;
 }
@@ -62,7 +62,7 @@ input[name='q']::placeholder {
 /* ------------------------------- bootstrap toasts */
 
 .toast, .toast-header{
-  background-color: black;
+  background-color: grey;
   color : white;
 }
 
@@ -71,7 +71,7 @@ input[name='q']::placeholder {
   top: 72px;
   right: 15px;
   z-index: 99999999999;
-  background-color: black;
+  background-color: grey;
   color : white;
 }
 
@@ -137,7 +137,7 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: black;
+  background-color: grey;
   color: white;
 }
 
