@@ -1,30 +1,169 @@
-[
-{
-"pk": 1,
-"model": "products.product",
-"fields": {
-"sku": "pp5001340155",
-"name": "BoWood Audio 50 euro Gift Voucher",
-"description": "Can't decide what gift to get someone? this voucher is perfect.",
-"price": 50.00,
-"category": 1,
-"rating": 4.6,
-"image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-"image": "DP0709201205510679M.jpg"
-}
-},
-{
-"pk": 2,
-"model": "products.product",
-"fields": {
-"sku": "pp5001600425",
-"name": "BoWood Audio Tea Towel",
-"description": "100 % cotten tea towel ",
-"price": 8.99,
-"category": 2,
-"rating": 4.6,
-"image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-"image": "DP0113201617034987M.jpg"
-}
-}
+[{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "BoWood Audio 50 euro Gift Voucher",
+            "description": "Can't decide what gift to get someone? this voucher is perfect.",
+            "price": 50.00,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "50-voucher.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600425",
+            "name": "BoWood Audio Tea Towel",
+            "description": "100 % cotten tea towel ",
+            "price": 6.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "tea-towels.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001600426",
+            "name": "BoWood Audio Tote Bag",
+            "description": "100 % cotten Tote Bag",
+            "price": 8.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "toto-bag.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50051652525",
+            "name": "BoWood Audio Mug",
+            "description": "dishwasher safe mug",
+            "price": 12.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "mug.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50015151252",
+            "name": "BoWood Audio T-Shirt",
+            "description": "100% cotton T-Shirt ",
+            "price": 18.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "t-shirt.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp4555162522",
+            "name": "Sweatshirt",
+            "description": "100% cotton Sweatshirt ",
+            "price": 23.99,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "sweatshirt.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp50454414425",
+            "name": "Baseball cap",
+            "description": "Baseball cap ",
+            "price": 11.99,
+            "category": 2,
+            "rating": 4.2,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "basebal-cap.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5085652255",
+            "name": "Drum sticks",
+            "description": "Drum sticks",
+            "price": 10.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "drum-sticks.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5062512525",
+            "name": "BoWood Audio Water Bottle",
+            "description": "Water Bottle",
+            "price": 8.99,
+            "category": 2,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "water-bottle.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp262252425",
+            "name": "Gift Voucher 20 euro",
+            "description": "Gift Voucher 20 euro",
+            "price": 20.00,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "20-voucher.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp556228212152",
+            "name": "Guitar Pick",
+            "description": "Guitar Pick",
+            "price": 2.99,
+            "category": 2,
+            "rating": 3.6,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "guitar-picks.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5528211254256",
+            "name": "BoWood Audio Bottle opener",
+            "description": "Bottle opener ",
+            "price": 4.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
+            "image": "beer-opener.jpg"
+        }
+    }
 ]

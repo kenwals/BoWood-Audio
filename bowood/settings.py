@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-bx1apv%nsfa%2y6fqz-r_u7@jcp_@a#a)d9qy&i@4g*@n_)3-1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['948fe4880d11.ngrok.io', 'localhost']
 
 
 # Application definition
@@ -178,7 +178,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'usd'
+STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')

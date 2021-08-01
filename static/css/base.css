@@ -4,26 +4,31 @@ html{
 
 body {
   color: white;
-  background-color: black;
+  background-color:#323232 ;
   font-family: 'Oswald', sans-serif;
 }
 
 .theme-bowood{
-  background-color: black;
+  background-color: #323232 ;
   color: white;
 }
 
-.navbar {
-    background-color: black;
+.navbar, .table {
+    background-color: #323232 ;
     color: white ;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white ;
+  font-size: 1.20rem;
+}
+
 .dropdown-menu{
-  background-color: black;
+  background-color: #323232 ;
 }
 
 .dropdown-item{
-  color: rgba(255,255,255,.55);
+  color: white ;
 }
 
 // this is a white icon with 50% opacity
@@ -37,7 +42,7 @@ body {
 }
 
 .card {
-  background-color: black;
+  background-color: #323232;
 }
 
 .maximum-width{
@@ -53,14 +58,24 @@ input[name='q']::placeholder {
   color: #aab7c4;
 }
 
+.bowood-text-muted{
+  color: #CCB19E;
+}
 
 /* ------------------------------- bootstrap toasts */
+
+.toast, .toast-header{
+  background-color: #BB3C2B;
+  color : white;
+}
 
 .message-container {
   position: fixed;
   top: 72px;
   right: 15px;
   z-index: 99999999999;
+  background-color: #BB3C2B;
+  color : white;
 }
 
 .custom-toast {
@@ -71,6 +86,10 @@ input[name='q']::placeholder {
   height: 2px;
 }
 
+
+.btn-white{
+  color: white;
+}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -121,6 +140,8 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #BB3C2B;
+  color: white;
 }
 
 
