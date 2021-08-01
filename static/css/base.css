@@ -4,17 +4,17 @@ html{
 
 body {
   color: white;
-  background-color: black;
+  background-color:#323232 ;
   font-family: 'Oswald', sans-serif;
 }
 
 .theme-bowood{
-  background-color: black;
+  background-color: #323232 ;
   color: white;
 }
 
 .navbar, .table {
-    background-color: black;
+    background-color: #323232 ;
     color: white ;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .dropdown-menu{
-  background-color: black;
+  background-color: #323232 ;
 }
 
 .dropdown-item{
@@ -42,7 +42,7 @@ body {
 }
 
 .card {
-  background-color: black;
+  background-color: #323232;
 }
 
 .maximum-width{
@@ -58,11 +58,14 @@ input[name='q']::placeholder {
   color: #aab7c4;
 }
 
+.bowood-bowood-text-muted{
+  color: #CCB19E;
+}
 
 /* ------------------------------- bootstrap toasts */
 
 .toast, .toast-header{
-  background-color: grey;
+  background-color: #BB3C2B;
   color : white;
 }
 
@@ -71,7 +74,7 @@ input[name='q']::placeholder {
   top: 72px;
   right: 15px;
   z-index: 99999999999;
-  background-color: grey;
+  background-color: #BB3C2B;
   color : white;
 }
 
@@ -137,7 +140,7 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: grey;
+  background-color: #BB3C2B;
   color: white;
 }
 
