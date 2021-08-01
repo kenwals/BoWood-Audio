@@ -69,13 +69,15 @@ name : STRING
 
 #### Colours
 
-Dark mode
+Mainly Dark mode using
 
-#BB3C2B - red
+#323232 - Graphite
 
-#F5CA9F  - biege
+#BB3C2B - Tall poppy
 
-#CCB19E - gold
+#F5CA9F  - Manhattan
+
+#CCB19E -  Rodeo Dust
 
 #### Icons
 
