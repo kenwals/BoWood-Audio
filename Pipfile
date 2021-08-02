@@ -14,6 +14,8 @@ django-countries = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
 gunicorn = "*"
+boto3 = "*"
+django-storages = "*"
 
 [dev-packages]
 
