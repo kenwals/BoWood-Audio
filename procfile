@@ -1,0 +1,1 @@
+web: gunicorn bowood.wsgi:application
