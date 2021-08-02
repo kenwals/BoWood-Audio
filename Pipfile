@@ -11,6 +11,9 @@ crispy-bootstrap5 = "*"
 django-crispy-forms = "*"
 stripe = "*"
 django-countries = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
 
 [dev-packages]
 
