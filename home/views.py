@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import PhotoGallery
 
 # Create your views here.
 
@@ -20,4 +21,10 @@ def contact(request):
 def gallery(request):
     """ A view to return the gallery page """
 
-    return render(request, 'home/gallery.html')
+    photos = PhotoGallery.objects.all()
+
+    context = {
+        'photos': photos,
+    }
+
+    return render(request, 'home/gallery.html', context)
