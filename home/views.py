@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.shortcuts import render
 from .models import PhotoGallery
+from django.core.mail import send_mail 
 
 # Create your views here.
 
@@ -22,7 +23,16 @@ def contact(request):
         message_subject = request.POST['subject']
         message = request.POST['message']
 
-        return render(request, 'home/contact.html', { 'message_name': message_name })
+        # send an email
+        send_mail(
+            message_subject + ': message from ' + message_name, # subject
+            message, # message
+            message_email, # from email
+            ['kenwals@gmail.com'], # To Email list
+        )
+        messages.info(request, f'Thank you {message_name}, Your message has been sent now!')
+
+        return render(request, 'home/contact.html',{'message_name': message_name})
 
     else:
         return render(request, 'home/contact.html')
