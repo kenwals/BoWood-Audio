@@ -1,6 +1,6 @@
 # BoWood Audio
 
-BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This websites primary intention is to display to the visitor what the setup of the studio is like and what services are available. 
+BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This websites primary intention is to display to the visitor what the setup of the studio is like and what services are available.
 
 ## UX
 
@@ -54,6 +54,8 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Relational Database tables schema
 
+![DB schema chart](wireframe/db-schema-20210803.png)
+
 ##### Products table
 
 ```bash
@@ -93,18 +95,13 @@ The font used is Oswald from Google fonts.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Online Shop purchaces payment can be accepted using the Stripe API
+- Messages inputed on the Contact form are emailed to the site owner
+- Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal 
 
 ### Features Left to Implement
-- Another feature idea
+- Gift vouchers previously sold can be validated/cashed on a table query 
 
 ## Technologies Used
 
