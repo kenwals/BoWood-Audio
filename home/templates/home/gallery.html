@@ -15,13 +15,12 @@
   <div class="row mt-5">
       <div class="col-12">
         <h2>GALLERY PAGE</h2>
-
       </div>
   </div>
   <div class="row">
     {% for photo in photos %}
-    <div class="col-xs-12  col-sm-6 col-md-4 m-1">
-      <img src="{{ photo.image_url }}" class="img-fluid" alt="...">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <img src="{{ photo.image_url }}" class="img-fluid p-1" alt="{{ photo.label }}">
     </div>
     {% endfor %}
   </div>
