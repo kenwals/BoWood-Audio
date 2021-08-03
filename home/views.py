@@ -22,11 +22,11 @@ def contact(request):
         message_email = request.POST['email']
         message_subject = request.POST['subject']
         message = request.POST['message']
-
+        print(message_email)
         # send an email
         send_mail(
             message_subject + ': message from ' + message_name, # subject
-            message, # message
+            message + " RECEIVED FROM : " + message_email, # message
             message_email, # from email
             ['kenwals@gmail.com'], # To Email list
         )
