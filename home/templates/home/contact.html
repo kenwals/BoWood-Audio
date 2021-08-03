@@ -22,7 +22,7 @@
   <div class="row">
       <div class="col-12 col-md-6 offset-md-3">
           {% if message_name %}
-          <div class="text-center">
+          <div class="text-center mt-5">
             <h3>Thank you {{ message_name }}!</h3>
             <p>We have received your message and will respond shortly.</p>
             <p>Best wishes</p>
@@ -33,11 +33,11 @@
             {% csrf_token %}
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input name="name" type="text" class="form-control" placeholder="Your full Name" aria-label="name" id="name">
+                <input name="name" type="text" class="form-control" placeholder="Please enter your full name" aria-label="name" id="name" required>
               </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" autocomplete="username" required >
             </div>
             <label for="subjectDataList" class="form-label">Subject</label>
             <input name="subject" class="form-control" list="datalistOptions" id="subjectDataList" placeholder="Type to search...">
@@ -48,7 +48,7 @@
             </datalist>
             <div class="mb-3">
                 <label for="contactTextarea1" class="form-label">Message</label>
-                <textarea name="message" class="form-control" id="contactTextarea1" rows="3"></textarea>
+                <textarea name="message" class="form-control" id="contactTextarea1" rows="3" required></textarea>
             </div>
             <input class="btn btn-outline-light" type="submit" value="Submit">
           </form>
