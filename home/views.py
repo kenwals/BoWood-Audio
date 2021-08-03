@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import render
 from .models import PhotoGallery
 
@@ -15,8 +16,16 @@ def whatwedo(request):
 
 def contact(request):
     """ A view to return the contact page """
+    if request.method == "POST":
+        message_name = request.POST['name']
+        message_email = request.POST['email']
+        message_subject = request.POST['subject']
+        message = request.POST['message']
 
-    return render(request, 'home/contact.html')
+        return render(request, 'home/contact.html', { 'message_name': message_name })
+
+    else:
+        return render(request, 'home/contact.html')
 
 def gallery(request):
     """ A view to return the gallery page """
