@@ -69,8 +69,23 @@ name : STRING
 
 ```
 
-#### Wireframes
+#### Wireframes of pages
 
+#### Home
+
+![Home page ](wireframe/wireframe1.PNG)
+
+#### What we do
+
+![What we do](wireframe/wireframe2.PNG)
+
+#### Contact
+
+![Contact ](wireframe/wireframe3.PNG)
+
+#### Gallery
+
+![Gallery ](wireframe/wireframe4.PNG)
 
 ### Surface
 
