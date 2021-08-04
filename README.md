@@ -23,7 +23,6 @@ The time allocated to build this project was shorter then previous projects, luc
 3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
 4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
 
-
 ### Structure
 
 This full stack site is put together with HTML, using the bootstrap framework along with some CSS.
@@ -34,9 +33,15 @@ The Database is integrated using Python and Django fronted onto a PostgreSQL bac
 
 The page content is dynamic and composed of Jinja templates which are put together using Python Django.
 
-#### Website page line up / Flask templates
+#### Website page line up 
 
 - Home / Index
+
+- What we do
+
+- Contact
+
+- Gallery
 
 - Login / Logout
 
