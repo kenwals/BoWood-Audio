@@ -8,3 +8,10 @@ class PhotoGallery(models.Model):
 
     def __str__(self):
         return self.label
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=60)
+    email = models.EmailField(max_length=254)
+    subject = models.CharField(max_length=60)
+    message = models.TextField(max_length=3000)
