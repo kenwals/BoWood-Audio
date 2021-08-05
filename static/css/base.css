@@ -246,3 +246,10 @@ color: #17a2b8; /* text-info */
   border-color: #dc3545;
   border-radius: 0;
 }
+
+
+/*   Review Modals */
+
+.modal-title, .modal-body{
+  color: black;
+}
