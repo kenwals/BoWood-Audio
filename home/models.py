@@ -3,6 +3,10 @@ from django.db import models
 
 
 class PhotoGallery(models.Model):
+
+    class Meta:
+        verbose_name_plural = "Photo Galleries"
+
     label = models.CharField(max_length=254)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
 
