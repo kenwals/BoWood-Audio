@@ -3,4 +3,19 @@
 
 
 <h2>Revews</h2>
+
+{% if reviews %}
+    {% for review in reviews %}
+
+    {{ review.review_title }}
+
+    {% endfor %}
+
+{% else %}
+
+<h4> No reviews! </h4>
+
+{% endif %}
+
+
 </div>
