@@ -15,6 +15,7 @@ The time allocated to build this project was shorter then previous projects, luc
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
+6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before i buy or share my opinion with other visitors.
 
 ### Owner Goals
 
