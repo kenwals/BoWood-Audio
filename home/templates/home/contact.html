@@ -31,25 +31,9 @@
           {% else %}
           <form action="{% url 'contact' %}" method="post">
             {% csrf_token %}
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input name="name" type="text" class="form-control" placeholder="Please enter your full name" aria-label="name" id="name" required>
-              </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" autocomplete="username" required >
-            </div>
-            <label for="subjectDataList" class="form-label">Subject</label>
-            <input name="subject" class="form-control" list="datalistOptions" id="subjectDataList" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-                <option value="Booking Query">
-                <option value="Shopping query">
-                <option value="Misc">
-            </datalist>
-            <div class="mb-3">
-                <label for="contactTextarea1" class="form-label">Message</label>
-                <textarea name="message" class="form-control" id="contactTextarea1" rows="3" required></textarea>
-            </div>
+            {% for field in form %}
+                {{ field | as_crispy_field }}
+            {% endfor %}
             <input class="btn btn-outline-light" type="submit" value="Submit">
           </form>
           {% endif %}
