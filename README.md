@@ -163,7 +163,6 @@ The font used is Oswald from Google fonts.
 - [Bootstrap](https://getbootstrap.com/)
 - Django
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-
 - Fonts : [Google Fonts](https://fonts.google.com/)
 - Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
 
@@ -181,7 +180,8 @@ The font used is Oswald from Google fonts.
 - [Python Tutor](http://pythontutor.com/): I used this very handy online sandbox for experimenting with Python code before applying to this project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
 - DB Schema diagram : [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
-- IDE: Visual Studio Code (VS Code).
+- IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
+- Virtual Environment : [Pipenv](https://pipenv.pypa.io/en/latest/)
 - Version control: Git
 - Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
@@ -193,7 +193,7 @@ The font used is Oswald from Google fonts.
 - px to rem convertor : [nekoCalc](https://nekocalc.com/px-to-rem-converter)
 - JavaScript linter : [jshint](https://jshint.com/)
 - Python linter :  [Pep8 online](http://pep8online.com/)
-- markdown linter : markdownlint extension on VS Code.
+- Markdown linter : markdownlint extension on VS Code.
 - Colour names : [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
 - Colour swatches : [Coolors](https://coolors.co/)
 - [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
@@ -223,15 +223,77 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you use also if you are using a desktop IDE like VSCode. It not necessary with Gitpod . This repo has the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables i used with keys masked.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+XXXXX
 
+For easy deployment on Heroku.com, you will need a GitHub user account and possibly a Gitpod user account. If you wish to make changes to this repository, please follow the GitHub steps first.
+
+### GitHub
+
+GitHub is a code hosting platform for version control and collaboration. It's free to enrol for a user account and I would recommend you have one if you wish to deploy this repository and make changes.
+
+When you have a GitHub account you can simply click on the Fork button on the top right corner. This will clone the Wildlife-Rescue repository for your GitHub account, then you can make any changes you like.
+
+### Gitpod
+
+The site can be edited easily on a Gitpod online workspace, you first register a free user account on <http://gitpod.io/>, then download the Gitpod extension on your preferred internet browser. On signing up you will be expected to have a GitHub user account.
+
+Once you have the extension on your browser, a green Gitpod button will appear beside this repository in GitHub. For best results fork the repository in your account before you open it in Gitpod.
+
+### Heroku
+
+Heroku is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
+
+1. Before you set up Heroku, you first need to create some files that are necessary for it to run on the Heroku server.
+2. Open a terminal window in your IDE on the root folder of the project, run the command below, this will create a new file called procfile.
+
+    ``` echo web: gunicorn bowood.wsgi:application > Procfile ```
+
+3. Now run the command line below. this will create a new file called requirements.txt
+
+    ``` pip3 freeze --local > requirements.txt ```
+
+4. Create a [Heroku user account](https://signup.heroku.com/login)
+5. Click on the New button and choose to create a new app.
+6. Input an app name and choose a region that is closest to you.
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
+8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
+
+### Local Deployment
+
+If you prefer working on the repository locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
+
+1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
+2. Above the list of files, click on the **code** button.
+3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+4. Open your preferred Terminal interface.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type **git clone**, then paste the URL you copied earlier above.
+7. Press Enter to create your local clone.
+8. To run the app.py locally you will need to have a XXXXX account, with the supporting variables inputted in the env.py file,
+ you may also need to install the packages listed Python app file.
+
+more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+### Contribution and Forking
+
+You may wish to contribute to this website and have your contribution published, if so, you are welcome to follow these steps below.
+
+1. Go to the GitHub website and log in.
+2. Open <https://github.com/kenwals/bowood-audio>
+3. In the top right-hand corner you will see a fork button, click on this **Fork button**.
+4. This will create a copy of the BoWood Audio repository in your Github account.
+5. Run the project locally and make your required changes.
+6. You can push these changes to your repository.
+7. Once you're finished making changes you can locate the **New Pull Request** button just above the file listing in the original repository (<https://github.com/kenwals/bowood-audio>).
+8. Your pull request will be reviewed and if approved, it will be merged into the main version of the BoWood Audio repository at a future date.
+
+more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
 ## Credits
 
