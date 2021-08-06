@@ -26,15 +26,15 @@ The time allocated to build this project was shorter then previous projects, luc
 
 ### Structure
 
-This full stack site is put together with HTML, using the bootstrap framework along with some CSS.
+This full stack site is put together with HTML, using the bootstrap framework along with some CSS on the frontend.
 
-The Database is integrated using Python and Django fronted onto a PostgreSQL backend.
+The frontend is integreated into the backend using Python and Django with a PostgreSQL Database.
 
 ### Skeleton
 
 The page content is dynamic and composed of Jinja templates which are put together using Python Django.
 
-#### Website page line up 
+#### Website page line up
 
 - Home / Index
 
@@ -52,9 +52,13 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 - All products
 
-- product details
+- Product details / reviews 
 
-- shopping cart
+- Shopping cart
+
+- Checkout
+
+- New product addition
 
 ### Database Schema
 
@@ -92,6 +96,8 @@ name : STRING
 
 #### Colours
 
+Colours were sourced from a work in progress design on a branding and logo for BoWood Audio.
+
 Mainly Dark mode using
 
 #323232 - Graphite
@@ -102,27 +108,42 @@ Mainly Dark mode using
 
 #CCB19E -  Rodeo Dust
 
+![colour swatch ](wireframe/colour-swatch.PNG)
+
 #### Icons
 
 Font Awescome is used for icons
 
 #### Images
 
-images are sourced from unsplash and site owner.
+Images are sourced from unsplash and site owner.
 
 #### Fonts
 
 The font used is Oswald from Google fonts.
 
+![font sample ](wireframe/font-sample.PNG)
+
 ## Features
 
 ### Existing Features
-- Online Shop purchaces payment can be accepted using the Stripe API
+
+- Online Shop purchases payment can be accepted using the Stripe API
+
 - Messages inputed on the Contact form are emailed to the site owner
+
 - Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal 
 
+- Visitors have full CRUD access to product reviews they submit.
+
+-
+
+- 
+
+
 ### Features Left to Implement
-- Gift vouchers previously sold can be validated/cashed on a table query 
+
+- Gift voucher handling
 
 ## Technologies Used
 
