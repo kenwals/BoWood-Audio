@@ -173,6 +173,7 @@ The font used is Oswald from Google fonts.
 - [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , planning and scheduling work.
 - [Zen mode](https://play.google.com/store/apps/details?id=com.oneplus.brickmode&hl=en_IE&gl=US): Great Android phone app to restrict my phone from distracting me when i need to get work done.
 - Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!. :smiley:
+- Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
 ##### Toolbox
 
@@ -183,9 +184,9 @@ The font used is Oswald from Google fonts.
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
 - Virtual Environment : [Pipenv](https://pipenv.pypa.io/en/latest/)
 - Version control: Git
-- Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
 - Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
+- [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
 - File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
 - Favicon creator : [favicon.io](https://favicon.io/favicon-generator/) **
 - Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
@@ -196,9 +197,9 @@ The font used is Oswald from Google fonts.
 - Markdown linter : markdownlint extension on VS Code.
 - Colour names : [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
 - Colour swatches : [Coolors](https://coolors.co/)
-- [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
 - [site preview tool](http://ami.responsivedesign.is/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
+- Image editing/cropping : MS Paint
 
 
 ## Testing
