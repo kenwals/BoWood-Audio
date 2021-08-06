@@ -66,6 +66,8 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 ![DB schema chart](wireframe/db-schema-20210803.png)
 
+[image source](https://drawsql.app/code-institute-3/diagrams/ms04#)
+
 ##### Products table
 
 ```bash
@@ -162,24 +164,29 @@ The font used is Oswald from Google fonts.
 - Django
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 
-- [PyMongo](https://pymongo.readthedocs.io/en/stable/)
 - Fonts : [Google Fonts](https://fonts.google.com/)
-- Icons : FA
+- Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
 
 #### Tools
+
+##### Productivity
+
+- [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , planning and scheduling work.
+- [Zen mode](https://play.google.com/store/apps/details?id=com.oneplus.brickmode&hl=en_IE&gl=US): Great Android phone app to restrict my phone from distracting me when i need to get work done.
+- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!. :smiley:
+
+##### Toolbox
 
 - JSfiddle : I used this online sandbox to build and play code before i adding to the project.
 - [Python Tutor](http://pythontutor.com/): I used this very handy online sandbox for experimenting with Python code before applying to this project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
-- DB Schema diagram : Drawsql.app
+- DB Schema diagram : [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: Visual Studio Code (VS Code).
 - Version control: Git
-- Browser Developer tools : [Google Chrome](https://www.google.com/chrome) for console.logging everything.
 - Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
 - Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
 - File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
-- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj)
 - Favicon creator : [favicon.io](https://favicon.io/favicon-generator/) **
 - Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
 - Auto formatter for HTML, CSS and JS:  [webformatter](https://webformatter.com/html)
