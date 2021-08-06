@@ -85,7 +85,7 @@
                                             <small class="bowood-text-muted">No Rating</small>
                                         {% endif %}
                                         {% if request.user.is_superuser %}
-                                        <small class="ml-3">
+                                        <small class="mb-3">
                                             <a class="bowood-text-muted" href="{% url 'edit_product' product.id %}">Edit</a> | 
                                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
