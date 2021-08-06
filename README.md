@@ -295,14 +295,33 @@ You may wish to contribute to this website and have your contribution published,
 
 more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
+
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
+- The foundation of this site is sourced from Code Institute Educational material - Boutique Ado
+- BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh . 
+
+### Resources
+
+
+- [Bootstrap components](https://getbootstrap.com/)
+
+- [W3schools](https://www.w3schools.com/)
+
+- [Code institute's Slack workspace channels](https://slack.com)
+
+- [Stack Exchange](https://stackexchange.com/)
+
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- Images on front page are sourced from 
+
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- Thanks to the Lego and Paul from BoWood Audio.
+- My Mentor [Maranatha Ilesanmi](https://github.com/mbilesanmi) for helpful guidance and laser-sharp attention to detail.
