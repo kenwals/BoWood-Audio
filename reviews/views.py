@@ -1,12 +1,12 @@
 from django.contrib import messages
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
 from products.models import Product
 from profiles.models import UserProfile
 
-# Create your views here.
-
+@login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if request.method == "POST":
@@ -31,7 +31,7 @@ def add_review(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-
+@login_required
 def edit_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     if request.method == "POST":
@@ -51,7 +51,7 @@ def edit_review(request, review_id):
     }
     return render(request, 'products/product_detail.html', context)
 
-
+@login_required
 def delete_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     product = review.product
