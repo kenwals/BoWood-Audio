@@ -14,13 +14,13 @@ class ReviewForm(forms.ModelForm):
             'review_text': 'Review'
         }
 
-        rating_choices = {
-            ('1', '1'),
-            ('2', '2'),
-            ('3', '3'),
-            ('4', '4'),
-            ('5', '5'),
-        }
+        rating_choices = [
+            (1, '1'),
+            (2, '2'),
+            (3, '3'),
+            (4, '4'),
+            (5, '5'),
+        ]
 
         widgets = {
             'review_title': forms.TextInput(attrs={ 'placeholder':'Enter your review title here' }),
