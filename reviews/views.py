@@ -30,3 +30,24 @@ def add_review(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def edit_review(request, review_id):
+    review = get_object_or_404(Review, pk=review_id)
+    if request.method == "POST":
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your review has been edited now")
+        else:
+            messages.error(request, 'Failed to edit review, please ensure form is valid.')
+    product = review.product
+    reviews = Review.objects.filter(product=product)
+    context = {
+            'product': product,
+            'reviews': reviews,
+            'review_form': form,
+    }
+    return render(request, 'products/product_detail.html', context)
+
+
