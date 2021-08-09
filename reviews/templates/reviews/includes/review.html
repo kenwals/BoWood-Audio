@@ -21,7 +21,7 @@
             <p class="card-text">   {{ review.review_text }}  </p>
             <p class="bowood-text-muted text-capitalize"><span>(<i class="far fa-star"></i> {{review.rating}} )</span> reviewer: {{ review.userid }}</p>
             <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editReviewModal">Edit</button>
-            <a href="#" class="btn btn-primary">Delete</a>
+            <a href="{% url 'delete_review' review.id %}" class="btn btn-primary">Delete</a>
           </div>
         </div>
 <!-- Edit Review Modal -->

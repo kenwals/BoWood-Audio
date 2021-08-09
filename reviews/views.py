@@ -43,6 +43,7 @@ def edit_review(request, review_id):
             messages.error(request, 'Failed to edit review, please ensure form is valid.')
     product = review.product
     reviews = Review.objects.filter(product=product)
+    form = ReviewForm()
     context = {
             'product': product,
             'reviews': reviews,
@@ -51,3 +52,16 @@ def edit_review(request, review_id):
     return render(request, 'products/product_detail.html', context)
 
 
+def delete_review(request, review_id):
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+    review.delete()
+    messages.success(request, "Your review has been deleted now")
+    reviews = Review.objects.filter(product=product)
+    form = ReviewForm()
+    context = {
+            'product': product,
+            'reviews': reviews,
+            'review_form': form,
+    }
+    return render(request, 'products/product_detail.html', context)
