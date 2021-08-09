@@ -15,7 +15,6 @@ def add_review(request, product_id):
             review_form = form.save(commit=False)
             review_form.userid = UserProfile.objects.get(user=request.user)
             review_form.product = product
-            print(review_form)
             review_form.save()
             messages.success(request, "Your review has been added now")
         else:
