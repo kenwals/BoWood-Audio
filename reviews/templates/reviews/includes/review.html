@@ -4,10 +4,12 @@
 
 <div class="row">
 <div class="col-cm-6">
+{% if user.is_authenticated %}
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-outline-light btn-sm my-3" data-bs-toggle="modal" data-bs-target="#newReviewModal">
   Submit a new review
 </button>
+{% endif %}
 </div>
 </div>
 
@@ -20,8 +22,10 @@
             <h5 class="card-title bowood-title-text text-capitalize">  {{ review.review_title }}</h5>
             <p class="card-text">   {{ review.review_text }}  </p>
             <p class="bowood-text-muted text-capitalize"><span>(<i class="far fa-star"></i> {{review.rating}} )</span> reviewer: {{ review.userid }}</p>
+            {% if user.is_authenticated and user.get_username == review.userid.user.username %}
             <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editReviewModal">Edit</button>
             <a href="{% url 'delete_review' review.id %}" class="btn btn-primary">Delete</a>
+            {% endif %}
           </div>
         </div>
 <!-- Edit Review Modal -->
