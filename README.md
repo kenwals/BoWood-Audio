@@ -64,7 +64,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Relational Database tables schema
 
-![DB schema chart](wireframe/db-schema-20210803.png)
+![DB schema chart](wireframe/db-schema-20210810.png)
 
 [image source](https://drawsql.app/code-institute-3/diagrams/ms04#)
 
