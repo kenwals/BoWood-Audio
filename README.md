@@ -52,7 +52,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 - All products
 
-- Product details / reviews 
+- Product details / reviews add/edit/delete
 
 - Shopping cart
 
@@ -134,11 +134,12 @@ The font used is Oswald from Google fonts.
 
 - Messages inputed on the Contact form are emailed to the site owner
 
-- Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal 
+- Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
 - Visitors have full CRUD access to product reviews they submit.
 
--
+- The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/) . Each change on the reviews model table triggers the particular product's rating to be re-calculated.
+
 
 - 
 
