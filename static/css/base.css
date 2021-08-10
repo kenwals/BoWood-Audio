@@ -31,11 +31,6 @@ body {
   color: white ;
 }
 
-// this is a white icon with 50% opacity
-.navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;..");
-}
-
 .carousel img {
   max-height: 768px;
   min-width: auto;
