@@ -9,19 +9,22 @@ from profiles.models import UserProfile
 @login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
-    if request.method == "POST":
-        form = ReviewForm(request.POST)
+    user = UserProfile.objects.get(user=request.user)
+    form = ReviewForm(request.POST)
+    # checks if the user has submitted a review already
+    existing_review = Review.objects.filter(userid=user, product=product)
+    if existing_review.count() > 0:
+        messages.error(request, 'Something went wrong! You have reviewed this item already')
+    else:
         if form.is_valid():
             review_form = form.save(commit=False)
-            review_form.userid = UserProfile.objects.get(user=request.user)
+            review_form.userid = user
             review_form.product = product
             review_form.save()
             messages.success(request, "Your review has been added now")
         else:
             messages.error(request, 'Failed to add review, please ensure form is valid.')
-    else:
-        form = ReviewForm()
- 
+
     return redirect(reverse('product_detail', args=(product_id,)))
 
 @login_required
