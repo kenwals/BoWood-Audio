@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
@@ -21,15 +21,8 @@ def add_review(request, product_id):
             messages.error(request, 'Failed to add review, please ensure form is valid.')
     else:
         form = ReviewForm()
-    reviews = Review.objects.filter(product=product_id)
-
-    context = {
-            'product': product,
-            'reviews': reviews,
-            'review_form': form,
-    }
-
-    return render(request, 'products/product_detail.html', context)
+ 
+    return redirect(reverse('product_detail', args=(product_id,)))
 
 @login_required
 def edit_review(request, review_id):
@@ -41,27 +34,13 @@ def edit_review(request, review_id):
             messages.success(request, "Your review has been edited now")
         else:
             messages.error(request, 'Failed to edit review, please ensure form is valid.')
-    product = review.product
-    reviews = Review.objects.filter(product=product)
-    form = ReviewForm()
-    context = {
-            'product': product,
-            'reviews': reviews,
-            'review_form': form,
-    }
-    return render(request, 'products/product_detail.html', context)
+
+    return redirect(reverse('product_detail', args=(review.product.id,)))
 
 @login_required
 def delete_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
-    product = review.product
     review.delete()
     messages.success(request, "Your review has been deleted now")
-    reviews = Review.objects.filter(product=product)
-    form = ReviewForm()
-    context = {
-            'product': product,
-            'reviews': reviews,
-            'review_form': form,
-    }
-    return render(request, 'products/product_detail.html', context)
+
+    return redirect(reverse('product_detail', args=(review.product.id,)))
