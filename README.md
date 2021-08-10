@@ -140,13 +140,9 @@ The font used is Oswald from Google fonts.
 
 - The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/) . Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
-
-- 
-
-
 ### Features Left to Implement
 
-- Gift voucher handling
+
 
 ## Technologies Used
 
@@ -159,20 +155,30 @@ The font used is Oswald from Google fonts.
 - Python
 - JavaScript/Jquery
 
-#### Libraries and Frameworks
+#### Libraries , Frameworks and Packages
 
 - [Bootstrap](https://getbootstrap.com/)
-- Django
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 - Fonts : [Google Fonts](https://fonts.google.com/)
 - Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
+- [django](https://www.djangoproject.com/)
+- django-allauth 
+- pillow 
+- crispy-bootstrap5 
+- django-crispy-forms 
+- stripe
+- django-countries 
+- dj-database-url 
+- psycopg2-binary
+- gunicorn 
+- boto3
+- django-storages 
 
 #### Tools
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , planning and scheduling work.
-- [Zen mode](https://play.google.com/store/apps/details?id=com.oneplus.brickmode&hl=en_IE&gl=US): Great Android phone app to restrict my phone from distracting me when i need to get work done.
+- [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , and planning work.
 - Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!. :smiley:
 - Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
