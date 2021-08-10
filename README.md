@@ -308,11 +308,20 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 ### Content
 
-- The foundation of this site is sourced from Code Institute Educational material - Boutique Ado
-- BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh . 
+- The foundation of this site is sourced from [Code Institute Educational material - Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+- The Review app is influenced by [LigaMoons Prikly](https://github.com/LigaMoon/Prickly/tree/main/reviews)
+- BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh .
 
 ### Resources
 
+- [trick used for navbar icon](https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color)
+
+- Codemy.com youtube videos on Django contact page setup [here](https://www.youtube.com/watch?v=xNqnHmXIuzU) and
+[here](https://www.youtube.com/watch?v=w4ilq6Zk-08)
+
+- CodingEntrepreneurs youtube video on [how to use Django signals](https://www.youtube.com/watch?v=rEX50LJrFuU)
+
+- [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
 - [Bootstrap components](https://getbootstrap.com/)
 
