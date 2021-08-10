@@ -4,6 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Category, Product
+from profiles.models import UserProfile
+from reviews.models import Review
+from reviews.forms import ReviewForm
 from .forms import ProductForm
 
 # Create your views here.
@@ -63,9 +66,30 @@ def product_detail(request, product_id):
     """ A view to show individual product details  """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product_id)
+    form = ReviewForm()
+    if request.user.is_authenticated:
+        user = UserProfile.objects.get(user=request.user)
+    else:
+        user = None
+
+    # If user has reviewed an item
+    try:
+        # retrieve review for selected item by user
+        item_review = Review.objects.get(userid=user, product=product)
+
+        # get a prefilled form with specific review
+        edit_review_form = ReviewForm(instance=item_review)
+
+    # If there are no reviews by the user
+    except Review.DoesNotExist:
+        edit_review_form = None
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': form,
+        'edit_review_form': edit_review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
