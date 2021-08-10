@@ -23,8 +23,8 @@
             <p class="card-text">   {{ review.review_text }}  </p>
             <p class="bowood-text-muted text-capitalize"><span>(<i class="far fa-star"></i> {{review.rating}} )</span> reviewer: {{ review.userid }}</p>
             {% if user.is_authenticated and user.get_username == review.userid.user.username %}
-            <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editReviewModal">Edit</button>
-            <a href="{% url 'delete_review' review.id %}" class="btn btn-primary">Delete</a>
+            <button href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editReviewModal">Edit</button>
+            <a href="{% url 'delete_review' review.id %}" class="btn btn-outline-danger btn-sm">Delete</a>
             {% endif %}
           </div>
         </div>
@@ -83,6 +83,7 @@
             {% endfor %}
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           <button class="btn btn-outline-dark" type="submit" >Submit</button>
         </div>
       </form>
