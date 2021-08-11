@@ -91,8 +91,9 @@ input[name='q']::placeholder {
 
 .message-container {
   position: fixed;
+  max-width: 300px;
   top: 72px;
-  right: 15px;
+  right: 5px; 
   z-index: 99999999999;
   background-color: #BB3C2B;
   color : white;
