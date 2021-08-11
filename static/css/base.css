@@ -31,9 +31,15 @@ body {
   color: white ;
 }
 
-.carousel img {
-  max-height: 768px;
-  min-width: auto;
+.home-page{
+  height: 100vh;
+  background: url(/media/home-page-alt2.jpg) no-repeat center top;
+  position: relative;
+  background-size: cover;
+}
+
+.homepage-caption{
+  margin-top: 33vh;
 }
 
 .card {

@@ -13,142 +13,15 @@
 
 <div class="container-xxl mt-5">
   <div class="row">
-    <div class="col-12">
-<!-- Desktop verion -->
-<div class="d-none d-lg-block">
-  <div id="DesktopCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#DesktopCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#DesktopCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#DesktopCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#DesktopCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/voice-over.jpg" class="d-block w-100"
-              alt="Scoring for radio or tv">
-            <div class="carousel-caption">
-              <h2>Welcome to BoWood Audio</h2>
-              <p>BoWood Audio is a recording and editing studio based in Dublin. 
-              </p>
-              <p> <a class="btn btn-outline-light" href="{% url 'whatwedo' %}" role="button">READ MORE</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/mixing.jpg" class="d-block w-100" alt="Mixing">
-            <div class="carousel-caption">
-              <h5>Mixing</h5>
-              <p class="d-none d-sm-block">We can add background effects or music with effects. Speed up or Slow down
-                audio to fit to your needs. Looping Audio Loop the same piece of audio to make it longer or shorter to
-                suit a video timeframe.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/corporate.jpg" class="d-block w-100"
-              alt="Corporate Audio Services">
-            <div class="carousel-caption">
-              <h5>Corporate Audio Services</h5>
-              <p class="d-none d-sm-block">We can clean up audio from meetings or conferences, Remove background noise
-                from poorly recorded Audio. Clean up unwanted transients in your audio recordings and remove unwanted
-                noise and reduction</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/voice-over.jpg" class="d-block w-100"
-              alt="Scoring for radio or tv">
-            <div class="carousel-caption">
-              <h5>Scoring for radio or tv</h5>
-              <p class="d-none d-sm-block">We can facilitate voice over for tv or radio commericals , Audio correction
-                or enhancement Format Audio Conversion (e.g. Wave, MP3, Aiff etc)
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#DesktopCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#DesktopCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="col-12 home-page">
+
+      <div class="text-center homepage-caption">
+        <h2>Welcome to BoWood Audio</h2>
+        <p>BoWood Audio is a recording and editing studio based in Dublin. 
+        </p>
+        <p> <a class="btn btn-outline-light" href="{% url 'whatwedo' %}" role="button">READ MORE</a></p>
       </div>
-</div>
-     
-<!-- mobile verion -->
-<div class="d-block d-lg-none">
-      <div id="mobileCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#mobileCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#mobileCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#mobileCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#mobileCaptions" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/voice-over.jpg" class="d-block"
-              alt="Scoring for radio or tv">
-            <div class="carousel-caption">
-              <h2>Welcome to BoWood Audio</h2>
-              <p class="fs-3">BoWood Audio is a recording and editing studio based in Dublin. 
-              </p>
-              <p> <a class="btn btn-outline-light" href="{% url 'whatwedo' %}" role="button">READ MORE</a></p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/mixing.jpg" class="d-block" alt="Mixing">
-            <div class="carousel-caption">
-              <h5>Mixing</h5>
-              <p class="d-none d-sm-block">We can add background effects or music with effects. Speed up or Slow down
-                audio to fit to your needs. Looping Audio Loop the same piece of audio to make it longer or shorter to
-                suit a video timeframe.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/corporate.jpg" class="d-block"
-              alt="Corporate Audio Services">
-            <div class="carousel-caption">
-              <h5>Corporate Audio Services</h5>
-              <p class="d-none d-sm-block">We can clean up audio from meetings or conferences, Remove background noise
-                from poorly recorded Audio. Clean up unwanted transients in your audio recordings and remove unwanted
-                noise and reduction</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://bowood.s3.eu-west-1.amazonaws.com/media/voice-over.jpg" class="d-block"
-              alt="Scoring for radio or tv">
-            <div class="carousel-caption">
-              <h5>Scoring for radio or tv</h5>
-              <p class="d-none d-sm-block">We can facilitate voice over for tv or radio commericals , Audio correction
-                or enhancement Format Audio Conversion (e.g. Wave, MP3, Aiff etc)
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mobileCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mobileCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</div>
+
     </div>
   </div>
 
