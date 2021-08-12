@@ -11,7 +11,7 @@
 
 {% block content %}
 
-<div class="container-xxl mt-5">
+<div class="container-fluid">
   <div class="row">
     <div class="col-12 home-page">
 
@@ -24,6 +24,19 @@
 
     </div>
   </div>
+
+<script type="text/javascript">
+
+if($(window).width() <= 1024){
+
+    document.getElementById("navbar").style.backgroundColor = "transparent";
+    
+    document.getElementById("navbar-toggler-icon").addEventListener("click", function() {
+      document.getElementById("navbar").style.backgroundColor = "#323232";
+    })
+
+}
+    </script>
 
 </div>
 
