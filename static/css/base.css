@@ -3,23 +3,23 @@ html{
 }
 
 body {
-  color: white;
+  color: #ffffff;
   background-color:#323232 ;
   font-family: 'Oswald', sans-serif;
 }
 
 .theme-bowood{
   background-color: #323232 ;
-  color: white;
+  color:  #fff ;
 }
 
 .navbar, .table {
     background-color: #323232 ;
-    color: white ;
+    color: #fff ;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: white ;
+  color: #fff ;
   font-size: 1.20rem;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .dropdown-item{
-  color: white ;
+  color: #fff ;
 }
 
 .home-page{
@@ -86,7 +86,7 @@ input[name='q']::placeholder {
 
 .toast, .toast-header{
   background-color: #BB3C2B;
-  color : white;
+  color : #fff;
 }
 
 .message-container {
@@ -96,7 +96,7 @@ input[name='q']::placeholder {
   right: 5px; 
   z-index: 99999999999;
   background-color: #BB3C2B;
-  color : white;
+  color : #fff;
 }
 
 .custom-toast {
@@ -109,7 +109,7 @@ input[name='q']::placeholder {
 
 
 .btn-white{
-  color: white;
+  color: #fff;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -162,7 +162,7 @@ input[name='q']::placeholder {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #BB3C2B;
-  color: white;
+  color: #fff;
 }
 
 
