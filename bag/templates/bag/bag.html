@@ -73,7 +73,7 @@
                     </tr>
                 </thead>
                 {% for item in bag_items %}
-                    <tr>
+                    
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% include "bag/product-image.html" %}
@@ -91,7 +91,7 @@
                                         <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
-                    </tr>
+                    
                 {% endfor %}
                 <tr>
                     <td colspan="5" class="pt-5 text-right">
