@@ -23,6 +23,11 @@ body {
   font-size: 1.20rem;
 }
 
+#navbar-toggler{
+  color: #fff;
+  border-color: #fff;
+}
+
 .dropdown-menu{
   background-color: #323232 ;
 }
