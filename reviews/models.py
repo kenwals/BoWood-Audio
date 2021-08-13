@@ -15,7 +15,7 @@ class Review(models.Model):
     userid = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_title = models.CharField(max_length=90)
-    review_text = models.TextField(max_length=3000)
+    review_text = models.TextField()
 
 
 @receiver(post_save, sender=Review)
