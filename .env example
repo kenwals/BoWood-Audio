@@ -1,0 +1,13 @@
+STRIPE_PUBLIC_KEY=SECRET_KEY
+STRIPE_SECRET_KEY=SECRET_KEY
+STRIPE_WH_SECRET=SECRET_KEY
+SECRET_KEY=SECRET_KEY
+EMAIL_HOST_PASS=SECRET_KEY
+EMAIL_HOST_USER=email_address
+DATABASE_URL=postgres://SECRET_KEY
+DEVELOPMENT=True
+
+
+# If using pipenv for your local virtual environment 
+# this environmental variables file is what you need populated with the appropriate keys
+# this file needs to be saved under the filename: .env 
