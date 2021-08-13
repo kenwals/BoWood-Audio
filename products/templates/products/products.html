@@ -127,12 +127,12 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
     })
 </script>
-<script type="text/javascript">
+<script>
     document.querySelector('#sort-selector').addEventListener('change', (event) => {
         var selector = document.querySelector('#sort-selector');
         var currentUrl = new URL(window.location);
