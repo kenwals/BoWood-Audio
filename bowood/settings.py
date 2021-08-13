@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['948fe4880d11.ngrok.io', 
+ALLOWED_HOSTS = ['948fe4880d11.ngrok.io',
                  'localhost',
                  '127.0.0.1',
                  'bowood-audio.herokuapp.com'
