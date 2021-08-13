@@ -110,7 +110,7 @@ Mainly Dark mode using
 
 #CCB19E -  Rodeo Dust
 
-![colour swatch ](wireframe/colour-swatch.PNG)
+![colour swatch ](wireframe/colour-swatch.png)
 
 #### Icons
 

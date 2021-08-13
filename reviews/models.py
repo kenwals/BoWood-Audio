@@ -15,7 +15,7 @@ class Review(models.Model):
     userid = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_title = models.CharField(max_length=90)
-    review_text = models.TextField(max_length=3000)
+    review_text = models.TextField()
 
 
 @receiver(post_save, sender=Review)
@@ -28,10 +28,6 @@ def update_on_save(sender, instance, created, **kwargs):
     avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
     product.rating = int(avg_rating)
     product.save()
-    if created: 
-        print("a new review has been created")
-    else:
-        print("a current review has been updated")
 
 @receiver(post_delete, sender=Review)
 def update_on_delete(sender, instance, **kwargs):
@@ -46,4 +42,3 @@ def update_on_delete(sender, instance, **kwargs):
     else:
         product.rating = 0
     product.save()
-    print("a review has been deleted ")

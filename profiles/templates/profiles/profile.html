@@ -74,9 +74,10 @@
             </div>
             <span class="bowood-text-muted float-end">(you are currently logged in as {{ user.get_username }})</span>
         </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+    <script src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
