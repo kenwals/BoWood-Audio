@@ -128,9 +128,9 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
-    })
+    $('.btt-link').click(() =>  {
+        window.scrollTo(0,0);
+    });
 </script>
 <script>
     document.querySelector('#sort-selector').addEventListener('change', (event) => {
@@ -152,6 +152,6 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}

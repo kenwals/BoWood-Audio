@@ -28,15 +28,13 @@
 <script>
 
 if($(window).width() <= 1024){
+document.getElementById("navbar").style.backgroundColor = "transparent";
 
-    document.getElementById("navbar").style.backgroundColor = "transparent";
-    
-    document.getElementById("navbar-toggler-icon").addEventListener("click", function() {
+document.getElementById("navbar-toggler-icon").addEventListener("click", () => {
       document.getElementById("navbar").style.backgroundColor = "#323232";
-    })
-
+    });
 }
-    </script>
+</script>
 
 </div>
 
