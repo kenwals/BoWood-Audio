@@ -21,13 +21,14 @@ class Review(models.Model):
 @receiver(post_save, sender=Review)
 def update_on_save(sender, instance, created, **kwargs):
     """
-    Update products rating on review save/update 
+    Update products rating on review save/update
     """
     product = Product.objects.get(name=instance.product)
     reviews = Review.objects.filter(product=product)
     avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
     product.rating = int(avg_rating)
     product.save()
+
 
 @receiver(post_delete, sender=Review)
 def update_on_delete(sender, instance, **kwargs):

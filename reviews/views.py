@@ -6,6 +6,7 @@ from .forms import ReviewForm
 from products.models import Product
 from profiles.models import UserProfile
 
+
 @login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
@@ -27,6 +28,7 @@ def add_review(request, product_id):
 
     return redirect(reverse('product_detail', args=(product_id,)))
 
+
 @login_required
 def edit_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
@@ -39,6 +41,7 @@ def edit_review(request, review_id):
             messages.error(request, 'Failed to edit review, please ensure form is valid.')
 
     return redirect(reverse('product_detail', args=(review.product.id,)))
+
 
 @login_required
 def delete_review(request, review_id):
