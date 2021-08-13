@@ -211,23 +211,93 @@ The font used is Oswald from Google fonts.
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Performance Testing
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Bugs encountered on the way
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### Known issues
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+### Project barriers and solutions
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Version control
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### Functionality Testing
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Responsiveness Testing
+
+For this test, I got a list of [15 most common screen sizes](https://www.designrush.com/trends/website-dimensions) and used [http://responsivetesttool.com/](http://responsivetesttool.com/) to check responsiveness for each screen size.
+
+The results are below. 15 Passes.
+
+| Device category | Model                 | Size Px (%popularity) | Result |
+| --------------- | --------------------- | ------------------ | ------ |
+| Desktop/Laptop  | NA                    | 1366x768 (22.98%)  | Pass   |
+| Desktop/Laptop  | NA                    | 1920x1080 (20.7%)  | Pass   |
+| Desktop/Laptop  | NA                    | 1536x864 (7.92%)   | Pass   |
+| Desktop/Laptop  | NA                    | 1440x900 (7.23%)   | Pass   |
+| Desktop/Laptop  | NA                    | 1280x720 (4.46%)   | Pass   |
+| Mobile Phone    | Samsung Galaxy Note 4 | 360x640 (18.7%)    | Pass   |
+| Mobile Phone    | Apple iPhone 6        | 375x667 (7.34%)    | Pass   |
+| Mobile Phone    | Apple iPhone XR       | 414x896 (6.76%)    | Pass   |
+| Mobile Phone    | Samsung Galaxy S8     | 360x780 (5.31%)    | Pass   |
+| Mobile Phone    | Apple iPhone X        | 375x812 (5.01%)    | Pass   |
+| Tablet          | Apple iPad            | 768x1024 (51.43%)  | Pass   |
+| Tablet          | unknown               | 1280x800 (7.28%)   | Pass   |
+| Tablet          | Samsung Galaxy Tab    | 800x1280 (5.26%)   | Pass   |
+| Tablet          | Google Nexus 7        | 601x962 (4.32%)    | Pass   |
+| Tablet          | unknown               | 962x601 (2.99%)    | Pass   |
+
+
+### CSS3 validator
+
+No errors.  Resource: <https://jigsaw.w3.org/css-validator/>
+
+### HTML5 validator
+
+No errors for the pages listed below. Resource: <https://validator.w3.org/>
+
+page 1
+
+2
+3
+
+
+### Python validator
+
+No issues. Results below. Resource:  <https://pep8online.com//>
+
+### JavaScript validator
+
+No issues. Results below. Resource:  <https://jshint.com/>
+
+
+### Usability Testing
+
+I shared the project on the peer-review channel on slack, and also with friends/family.
+
+I tested and improved accessibility with lighthouse and Firefox developer tools.
+
+Any issues found were resolved.
+
+### Compatibility Testing
+
+| Screen size\Browser                          | Chrome | Firefox | Edge |
+| -------------------------------------------- | ------ | ------- | ---- |
+| Android Mobile phone (Screen width 412px) xs | Pass | Pass | Pass |
+| Android Tablet (Screen width 600px) sm       | Pass | Pass | Pass |
+| Windows laptop (Screen width 2560px)         |   Pass |  Pass |  Pass    |
+
+### Testing User Stories
+
+#### Visitor Stories
+
+
+
+#### Owner Stories
+
+
+
+
 
 ## Deployment
 
