@@ -223,9 +223,9 @@ The font used is Oswald from Google fonts.
 
 ### Existing Features
 
-- Online Shop purchases payment can be accepted using the Stripe API
+- Online Shop purchases payment can be accepted using the Stripe API.
 
-- Messages inputed on the Contact form are emailed to the site owner
+- Messages inputed on the Contact form are emailed to the site owner.
 
 - Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
@@ -235,7 +235,7 @@ The font used is Oswald from Google fonts.
 
 ### Features Left to Implement
 
-- Pagination of results on products list page
+- Pagination of results on products list page.
 
 ## Technologies Used
 
@@ -255,40 +255,39 @@ The font used is Oswald from Google fonts.
 - Fonts : [Google Fonts](https://fonts.google.com/)
 - Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
 - [django](https://www.djangoproject.com/)
-- django-allauth 
-- pillow 
-- crispy-bootstrap5 
-- django-crispy-forms 
+- django-allauth
+- pillow
+- crispy-bootstrap5
+- django-crispy-forms
 - stripe
-- django-countries 
-- dj-database-url 
+- django-countries
+- dj-database-url
 - psycopg2-binary
-- gunicorn 
+- gunicorn
 - boto3
-- django-storages 
+- django-storages
 
 #### Tools
 
 ##### Productivity
 
 - [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , and planning work.
-- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!. :smiley:
+- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
 ##### Toolbox
 
 - JSfiddle : I used this online sandbox to build and play code before i adding to the project.
-- [Python Tutor](http://pythontutor.com/): I used this very handy online sandbox for experimenting with Python code before applying to this project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
 - DB Schema diagram : [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
 - Virtual Environment : [Pipenv](https://pipenv.pypa.io/en/latest/)
-- Version control: Git
+- Version control: Git and GitHub Desktop app
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
 - Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
 - [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
 - File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
-- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/) **
+- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/)
 - Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
 - Auto formatter for HTML, CSS and JS:  [webformatter](https://webformatter.com/html)
 - px to rem convertor : [nekoCalc](https://nekocalc.com/px-to-rem-converter)
