@@ -1,4 +1,3 @@
-from home.forms import ContactForm
 from django.contrib import messages
 from django.shortcuts import render
 from .models import PhotoGallery
