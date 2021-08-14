@@ -1,12 +1,9 @@
-from products.models import Product
+from products.models import Product, UserProfile
 from django.db import models
 from django.db.models.fields import DecimalField
 from django.db.models.signals import post_save, post_delete
 from django.db.models import Avg
 from django.dispatch import receiver
-
-from products.models import Product
-from profiles.models import UserProfile
 
 
 class Review(models.Model):
@@ -16,6 +13,9 @@ class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_title = models.CharField(max_length=90)
     review_text = models.TextField()
+
+    def __str__(self):
+        return self.name
 
 
 @receiver(post_save, sender=Review)

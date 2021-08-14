@@ -1,4 +1,3 @@
-from products.models import Product
 from django import forms
 from django.forms import fields
 from .models import Review
