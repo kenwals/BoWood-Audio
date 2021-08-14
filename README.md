@@ -392,35 +392,75 @@ Any issues found were resolved.
 
 ## Deployment
 
+I developed this application in VScode, While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
+
+**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked. You will need to replace with your own.
+
+```
+
+STRIPE_PUBLIC_KEY=SECRET_KEY
+STRIPE_SECRET_KEY=SECRET_KEY
+STRIPE_WH_SECRET=SECRET_KEY
+SECRET_KEY=SECRET_KEY
+EMAIL_HOST_PASS=SECRET_KEY
+EMAIL_HOST_USER=email_address
+DEVELOPMENT=True
+```
+
 ### Pre-Requisites for Deployment
 
 You will need :
-    1. A Stripe account
-    2. An AWS account.
-    3. An email address STMP server password or passkey.
-    4. an Heruko account with a PostGresSQL app installed.
-    5. A GitHub account.
 
-For easy deployment on Heroku.com, you will need a GitHub user account and possibly a Gitpod user account. If you wish to make changes to this repository, please follow the GitHub steps first.
+- [Python](https://www.python.org/) installed 
 
-### GitHub
+- A Stripe account
 
-GitHub is a code hosting platform for version control and collaboration. It's free to enrol for a user account and I would recommend you have one if you wish to deploy this repository and make changes.
+- An AWS account setup.
 
-When you have a GitHub account you can simply click on the Fork button on the top right corner. This will clone the Bowood-Audio repository for your GitHub account, then you can make any changes you like.
+- An email address STMP server password or passkey.
 
-### Gitpod
+- A Django Secret Key.
 
-The site can be edited easily on a Gitpod online workspace, you first register a free user account on <http://gitpod.io/>, then download the Gitpod extension on your preferred internet browser. On signing up you will be expected to have a GitHub user account.
+- an Heruko account with a PostGresSQL app installed.
 
-Once you have the extension on your browser, a green Gitpod button will appear beside this repository in GitHub. For best results fork the repository in your account before you open it in Gitpod.
+- A GitHub account.
 
-To get started with Gitpod after you have clicked the green button on the GitHub page :
+### Local Deployment
 
-1. After gitpod has loaded up the repository for you , go the terminal and enter the command below. This will install all the dependancies.
+To deploy locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
+
+1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
+2. Above the list of files, click on the **code** button.
+3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+4. Open your preferred Terminal interface.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type **git clone**, then paste the URL you copied earlier above.
+7. Press Enter to create your local clone. more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+###  For VScode and Pipenv
+
+8. To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
+9. Your VScode should have Python installed already , if it does please ensure it's there by entering the command below.
 ```
-pip install -r requirements.txt 
+python --version
+```
+10. Now you need to install Pipenv, enter the command below.
+```
+pip install pipenv
+```
+11. As this repository has the setup files made already , you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
+```
+pipenv shell
+```
+12. You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
 
+![pipenv success image](wireframe/pipenv.png)
+
+13. Now to run the application on your desktop , enter the command below and open http://localhost:8000/ on your preferred browser.
+```
+python manage.py runserver
 ```
 
 ### Heroku
@@ -443,40 +483,7 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
 
-### Local Deployment
 
-If you prefer working on the repository locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
-
-1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
-2. Above the list of files, click on the **code** button.
-3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
-   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
-   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
-4. Open your preferred Terminal interface.
-5. Change the current working directory to the location where you want the cloned directory.
-6. Type **git clone**, then paste the URL you copied earlier above.
-7. Press Enter to create your local clone.
-8. To run the manage.py locally you will need to have a XXXXX account, with the supporting variables inputted in the .env file,
- you may also need to install the packages listed Python app file.
-
-more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-
-
-While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you use also if you are using a desktop IDE like VSCode. It's not necessary with Gitpod . This repo includes the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
-
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked.
-
-```
-
-STRIPE_PUBLIC_KEY=SECRET_KEY
-STRIPE_SECRET_KEY=SECRET_KEY
-STRIPE_WH_SECRET=SECRET_KEY
-SECRET_KEY=SECRET_KEY
-EMAIL_HOST_PASS=SECRET_KEY
-EMAIL_HOST_USER=email_address
-DATABASE_URL=postgres://SECRET_KEY
-DEVELOPMENT=True
-```
 
 
 ### Contribution and Forking
@@ -515,6 +522,8 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 - [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975) . This is used on homepage to make navbar background transparent on mobile for this initial load.
 
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
+
+- [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
 - [Bootstrap components](https://getbootstrap.com/)
 
