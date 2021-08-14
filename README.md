@@ -64,7 +64,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Relational Database tables schema
 
-![DB schema chart](wireframe/db-schema-20210810.png)
+![DB schema chart](wireframe/db-schema-20210814.png)
 
 [image source](https://drawsql.app/code-institute-3/diagrams/ms04#)
 
@@ -117,6 +117,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 ##### Contact table
 
 ```bash
+# This Model is just used for the contact form rendering, no data is saved
 
     name = models.CharField(max_length=60)
     email = models.EmailField(max_length=254)
@@ -234,7 +235,7 @@ The font used is Oswald from Google fonts.
 
 ### Features Left to Implement
 
-
+- Pagination of results on products list page
 
 ## Technologies Used
 
