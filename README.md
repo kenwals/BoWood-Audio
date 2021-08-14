@@ -195,13 +195,13 @@ Colours were sourced from a work in progress design on a branding and logo for B
 
 Mainly Dark mode using
 
-#323232 - Graphite
+ #323232 - Graphite
 
-#BB3C2B - Tall poppy
+ #BB3C2B - Tall poppy
 
-#F5CA9F  - Manhattan
+ #F5CA9F  - Manhattan
 
-#CCB19E -  Rodeo Dust
+ #CCB19E -  Rodeo Dust
 
 ![colour swatch ](wireframe/colour-swatch.png)
 
@@ -300,7 +300,6 @@ The font used is Oswald from Google fonts.
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Image editing/cropping : MS Paint
 
-
 ## Testing
 
 ### Performance Testing
@@ -316,7 +315,6 @@ The font used is Oswald from Google fonts.
 ### Functionality Testing
 
 ### Responsiveness Testing
-
 
 ### CSS3 validator
 
@@ -350,7 +348,6 @@ No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
 - New product addition
 
-
 ### Python validator
 
 No issues. Results below. Resource:  <https://pep8online.com//>
@@ -358,7 +355,6 @@ No issues. Results below. Resource:  <https://pep8online.com//>
 ### JavaScript validator
 
 No issues. Results below. Resource:  <https://jshint.com/>
-
 
 ### Usability Testing
 
@@ -393,7 +389,6 @@ Any issues found were resolved.
 2. As the owner of this site, I want to be able to have an online store so i can sell merchandise and gift vouchers.
 3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
 4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
-
 
 ## Deployment
 
@@ -469,7 +464,6 @@ You may wish to contribute to this website and have your contribution published,
 
 more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
-
 ## Credits
 
 ### Content
@@ -477,6 +471,7 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 - The foundation of this site is sourced from [Code Institute Educational material - Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 - The Review app is influenced by [LigaMoons Prikly](https://github.com/LigaMoon/Prickly/tree/main/reviews)
 - BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh .
+- Points of referance used for making this web app were [Camden Recording Studios](https://www.camdenrecordingstudios.com/) and [Grouse Lodge](http://grouselodge.com/).
 
 ### Resources
 
@@ -486,6 +481,8 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 [here](https://www.youtube.com/watch?v=w4ilq6Zk-08)
 
 - CodingEntrepreneurs youtube video on [how to use Django signals](https://www.youtube.com/watch?v=rEX50LJrFuU)
+
+- [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975) . This is used on homepage to make navbar background transparent on mobile for this initial load.
 
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
@@ -501,10 +498,22 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 ### Media
 
-- Images on front page are sourced from 
+Product Images that were sourced from Unsplash credited below:
 
+1. Mug          [https://unsplash.com/photos/nDd3dIkkOLo](https://unsplash.com/photos/nDd3dIkkOLo)
+2. T-shirt       [https://unsplash.com/photos/m1MRYp556Ew](https://unsplash.com/photos/m1MRYp556Ew)
+3. Sweatshirt     [https://unsplash.com/photos/ikLELWYbyxk](https://unsplash.com/photos/ikLELWYbyxk)
+4. Baseball cap   [https://unsplash.com/photos/b9hqQkKCnqw](https://unsplash.com/photos/b9hqQkKCnqw)
+5. Drum sticks    [https://unsplash.com/photos/bRG2C0FAQEY](https://unsplash.com/photos/bRG2C0FAQEY)  
+6. Water Bottle   [https://unsplash.com/photos/POAQXzBwF7g](https://unsplash.com/photos/POAQXzBwF7g)
+7. Gift Voucher 50 euro  [https://unsplash.com/photos/RNlVIhXrz-Y](https://unsplash.com/photos/RNlVIhXrz-Y)
+8. Gift Voucher 20 euro  [https://unsplash.com/photos/HwU5H9Y6aL8](https://unsplash.com/photos/HwU5H9Y6aL8)
+9. Guitar pick  [https://unsplash.com/photos/s2efxWujA-o](https://unsplash.com/photos/s2efxWujA-o)
+10. Bottle opener  [https://unsplash.com/photos/voJB2goG0us](https://unsplash.com/photos/voJB2goG0us)
+11. Tea towel [https://unsplash.com/photos/8yIYQDR8Qr8](https://unsplash.com/photos/8yIYQDR8Qr8)
+12. Tote Bag [https://unsplash.com/photos/nKK32qJheBY](https://unsplash.com/photos/nKK32qJheBY)
 
 ### Acknowledgements
 
 - Thanks to the Lego and Paul from BoWood Audio.
-- My Mentor [Maranatha Ilesanmi](https://github.com/mbilesanmi) for helpful guidance and laser-sharp attention to detail.
+- My Mentor [Maranatha Ilesanmi](https://github.com/mbilesanmi) for helpful guidance throughout.
