@@ -392,11 +392,14 @@ Any issues found were resolved.
 
 ## Deployment
 
-While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you use also if you are using a desktop IDE like VSCode. It not necessary with Gitpod . This repo has the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
+### Pre-Requisites for Deployment
 
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables i used with keys masked.
-
-XXXXX
+You will need :
+    1. A Stripe account
+    2. An AWS account.
+    3. An email address STMP server password or passkey.
+    4. an Heruko account with a PostGresSQL app installed.
+    5. A GitHub account.
 
 For easy deployment on Heroku.com, you will need a GitHub user account and possibly a Gitpod user account. If you wish to make changes to this repository, please follow the GitHub steps first.
 
@@ -404,13 +407,21 @@ For easy deployment on Heroku.com, you will need a GitHub user account and possi
 
 GitHub is a code hosting platform for version control and collaboration. It's free to enrol for a user account and I would recommend you have one if you wish to deploy this repository and make changes.
 
-When you have a GitHub account you can simply click on the Fork button on the top right corner. This will clone the Wildlife-Rescue repository for your GitHub account, then you can make any changes you like.
+When you have a GitHub account you can simply click on the Fork button on the top right corner. This will clone the Bowood-Audio repository for your GitHub account, then you can make any changes you like.
 
 ### Gitpod
 
 The site can be edited easily on a Gitpod online workspace, you first register a free user account on <http://gitpod.io/>, then download the Gitpod extension on your preferred internet browser. On signing up you will be expected to have a GitHub user account.
 
 Once you have the extension on your browser, a green Gitpod button will appear beside this repository in GitHub. For best results fork the repository in your account before you open it in Gitpod.
+
+To get started with Gitpod after you have clicked the green button on the GitHub page :
+
+1. After gitpod has loaded up the repository for you , go the terminal and enter the command below. This will install all the dependancies.
+```
+pip install -r requirements.txt 
+
+```
 
 ### Heroku
 
@@ -431,6 +442,7 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
+
 ### Local Deployment
 
 If you prefer working on the repository locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
@@ -444,10 +456,28 @@ If you prefer working on the repository locally on your preferred Desktop IDE, y
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above.
 7. Press Enter to create your local clone.
-8. To run the app.py locally you will need to have a XXXXX account, with the supporting variables inputted in the env.py file,
+8. To run the manage.py locally you will need to have a XXXXX account, with the supporting variables inputted in the .env file,
  you may also need to install the packages listed Python app file.
 
 more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
+While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you use also if you are using a desktop IDE like VSCode. It's not necessary with Gitpod . This repo includes the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
+
+**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked.
+
+```
+
+STRIPE_PUBLIC_KEY=SECRET_KEY
+STRIPE_SECRET_KEY=SECRET_KEY
+STRIPE_WH_SECRET=SECRET_KEY
+SECRET_KEY=SECRET_KEY
+EMAIL_HOST_PASS=SECRET_KEY
+EMAIL_HOST_USER=email_address
+DATABASE_URL=postgres://SECRET_KEY
+DEVELOPMENT=True
+```
+
 
 ### Contribution and Forking
 
