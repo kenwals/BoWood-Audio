@@ -317,28 +317,6 @@ The font used is Oswald from Google fonts.
 
 ### Responsiveness Testing
 
-For this test, I got a list of [15 most common screen sizes](https://www.designrush.com/trends/website-dimensions) and used [http://responsivetesttool.com/](http://responsivetesttool.com/) to check responsiveness for each screen size.
-
-The results are below. 15 Passes.
-
-| Device category | Model                 | Size Px (%popularity) | Result |
-| --------------- | --------------------- | ------------------ | ------ |
-| Desktop/Laptop  | NA                    | 1366x768 (22.98%)  | Pass   |
-| Desktop/Laptop  | NA                    | 1920x1080 (20.7%)  | Pass   |
-| Desktop/Laptop  | NA                    | 1536x864 (7.92%)   | Pass   |
-| Desktop/Laptop  | NA                    | 1440x900 (7.23%)   | Pass   |
-| Desktop/Laptop  | NA                    | 1280x720 (4.46%)   | Pass   |
-| Mobile Phone    | Samsung Galaxy Note 4 | 360x640 (18.7%)    | Pass   |
-| Mobile Phone    | Apple iPhone 6        | 375x667 (7.34%)    | Pass   |
-| Mobile Phone    | Apple iPhone XR       | 414x896 (6.76%)    | Pass   |
-| Mobile Phone    | Samsung Galaxy S8     | 360x780 (5.31%)    | Pass   |
-| Mobile Phone    | Apple iPhone X        | 375x812 (5.01%)    | Pass   |
-| Tablet          | Apple iPad            | 768x1024 (51.43%)  | Pass   |
-| Tablet          | unknown               | 1280x800 (7.28%)   | Pass   |
-| Tablet          | Samsung Galaxy Tab    | 800x1280 (5.26%)   | Pass   |
-| Tablet          | Google Nexus 7        | 601x962 (4.32%)    | Pass   |
-| Tablet          | unknown               | 962x601 (2.99%)    | Pass   |
-
 
 ### CSS3 validator
 
@@ -348,10 +326,29 @@ No errors.  Resource: <https://jigsaw.w3.org/css-validator/>
 
 No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
-page 1
+- Home / Index
 
-2
-3
+- What we do
+
+- Contact
+
+- Gallery
+
+- Login / Logout
+
+- Register new user
+
+- Profile / My details / Edit my Contact details
+
+- All products
+
+- Product details / reviews add/edit/delete
+
+- Shopping cart
+
+- Checkout
+
+- New product addition
 
 
 ### Python validator
@@ -383,12 +380,19 @@ Any issues found were resolved.
 
 #### Visitor Stories
 
-
+1. As a visitor to this site, I want to see what services are available so I can decide if I want to do business here.
+2. As a visitor to this site, I want to see pictures of the studio, so I know who what to expect.
+3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
+4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
+5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
+6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before i buy or share my opinion with other visitors.
 
 #### Owner Stories
 
-
-
+1. As the owner of this site, I want a simple landing page, so that visitors can learn about my studio easily and quickly.
+2. As the owner of this site, I want to be able to have an online store so i can sell merchandise and gift vouchers.
+3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
+4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
 
 
 ## Deployment
