@@ -396,7 +396,7 @@ I developed this application in VScode, While developing this application i used
 
 **Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked. You will need to replace with your own.
 
-```
+```bash
 
 STRIPE_PUBLIC_KEY=SECRET_KEY
 STRIPE_SECRET_KEY=SECRET_KEY
@@ -411,7 +411,7 @@ DEVELOPMENT=True
 
 You will need :
 
-- [Python](https://www.python.org/) installed 
+- [Python](https://www.python.org/) installed
 
 - A Stripe account
 
@@ -439,27 +439,34 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 6. Type **git clone**, then paste the URL you copied earlier above.
 7. Press Enter to create your local clone. more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-###  For VScode and Pipenv
+### For VScode and Pipenv
 
-8. To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
+8.To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
 9. Your VScode should have Python installed already , if it does please ensure it's there by entering the command below.
-```
+
+```bash
 python --version
 ```
-10. Now you need to install Pipenv, enter the command below.
-```
+
+10.Now you need to install Pipenv, enter the command below.
+
+```bash
 pip install pipenv
 ```
-11. As this repository has the setup files made already , you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
-```
+
+11.As this repository has the setup files made already , you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
+
+```bash
 pipenv shell
 ```
-12. You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
+
+12.You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
 
 ![pipenv success image](wireframe/pipenv.png)
 
-13. Now to run the application on your desktop , enter the command below and open http://localhost:8000/ on your preferred browser.
-```
+13.Now to run the application on your desktop , enter the command below and open <http://localhost:8000/> on your preferred browser.
+
+```bash
 python manage.py runserver
 ```
 
@@ -481,10 +488,6 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 6. Input an app name and choose a region that is closest to you.
 7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
-
-
-
-
 
 ### Contribution and Forking
 
