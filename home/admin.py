@@ -10,4 +10,5 @@ class PhotoGalleryAdmin(admin.ModelAdmin):
 
     ordering = ('label',)
 
+
 admin.site.register(PhotoGallery, PhotoGalleryAdmin)
