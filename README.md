@@ -2,6 +2,8 @@
 
 BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This websites primary intention is to display to the visitor what the setup of the studio is like and what services are available.
 
+![ipad preview](/wireframe/ipad-view.png)
+
 ## UX
 
 ### Scope
@@ -64,7 +66,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Relational Database tables schema
 
-![DB schema chart](wireframe/db-schema-20210814.png)
+![DB schema chart](wireframe/db-schema-20210815.png)
 
 [image source](https://drawsql.app/code-institute-3/diagrams/ms04#)
 
@@ -137,7 +139,6 @@ The page content is dynamic and composed of Jinja templates which are put togeth
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
 ```
@@ -173,19 +174,19 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Home
 
-![Home page ](wireframe/wireframe1.PNG)
+![Home page ](wireframe/wireframe1.png)
 
 #### What we do
 
-![What we do](wireframe/wireframe2.PNG)
+![What we do](wireframe/wireframe2.png)
 
 #### Contact
 
-![Contact ](wireframe/wireframe3.PNG)
+![Contact ](wireframe/wireframe3.png)
 
 #### Gallery
 
-![Gallery ](wireframe/wireframe4.PNG)
+![Gallery ](wireframe/wireframe4.png)
 
 ### Surface
 
