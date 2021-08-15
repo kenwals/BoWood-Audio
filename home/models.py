@@ -3,10 +3,10 @@ from django.db import models
 
 class PhotoGallery(models.Model):
     """
-    
-    This model is connected to the Gallery page, 
+
+    This model is connected to the Gallery page,
     photos can be added on the Admin portal
-    
+
     """
     class Meta:
         verbose_name_plural = "Photo Galleries"

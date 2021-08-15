@@ -18,8 +18,8 @@ def whatwedo(request):
 
 
 def contact(request):
-    """ 
-    This view populates and takes messages 
+    """
+    This view populates and takes messages
     from the contact page
     """
     if request.method == "POST":
