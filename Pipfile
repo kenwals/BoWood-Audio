@@ -16,6 +16,7 @@ psycopg2-binary = "*"
 gunicorn = "*"
 boto3 = "*"
 django-storages = "*"
+flake8 = "*"
 
 [dev-packages]
 

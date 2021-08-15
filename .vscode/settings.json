@@ -6,7 +6,7 @@
    "python.terminal.activateEnvironment": false,
    "python.formatting.autopep8Path": "/home/gitpod/.pyenv/shims/autopep8",
    "python.linting.flake8Path": "/home/gitpod/.pyenv/shims/flake8",
-   "cornflakes.linter.executablePath": "/home/gitpod/.pyenv/shims/flake8",
+   "cornflakes.linter.executablePath": "path/to/venvs/myvenv/bin/flake8",
    "files.exclude": {
       "**/.DS_Store": true,
       "**/.git": true,
@@ -22,5 +22,10 @@
    },
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "beautify.config": "",
+   "editor.fontSize": 16,
+   "python.linting.ignorePatterns": [
+      "**/site-packages/**/*.py"
+   ]
 }

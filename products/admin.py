@@ -10,7 +10,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'rating',
         'image',
-    ) # this controls what columns are on the list display in the admin portal
+    )  # this controls what columns are on the list display in the admin portal
 
     ordering = ('sku',)
 
@@ -20,6 +20,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

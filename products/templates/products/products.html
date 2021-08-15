@@ -31,11 +31,11 @@
   </div>
   <hr class="w-75 my-1 mx-auto">
   <div class="row">
-            <div class="col-6 d-flex justify-content-start bowood-text-muted">
+            <div class="col-6 d-flex justify-content-start bowood-text-muted mt-5">
                    {% if products|length > 0 %} 
                     {{ products|length }} results{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                     {% else %}
-                    No results found, <a href="{% url 'products' %}?category=mechandise,voucher">click here to view All Items</a>
+                    No results found , <a href="{% url 'products' %}?category=mechandise,voucher">click here to view all Items</a>
                     {% endif %}
             </div>
             <div class="col-6 d-flex justify-content-end ">
@@ -129,8 +129,8 @@
 {{ block.super }}
 <script>
     $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
-    })
+        window.scrollTo(0,0);
+    });
 </script>
 <script>
     document.querySelector('#sort-selector').addEventListener('change', (event) => {
@@ -152,6 +152,6 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}

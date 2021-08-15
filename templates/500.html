@@ -16,7 +16,9 @@
     <div class="col-12 home-page">
 
       <div class="text-center homepage-caption">
-        <h1>Welcome to BoWood Audio</h1>
+        <h1>Whoops , Something went wrong!</h1>
+        <p>It looks like you are looks like something went wrong with our server (Error 500 - server error). </p>
+        
         <p class="fs-3 my-5">BoWood Audio is a recording and editing studio based in Dublin. 
         </p>
         <p> <a class="btn btn-outline-light" href="{% url 'whatwedo' %}" role="button">READ MORE</a></p>
@@ -24,21 +26,6 @@
 
     </div>
   </div>
-
-<!-- 
-This script makes the navbar backgroundColor transparent on small screens
-It's changes back again when the user click on the navbar toggle button
--->
-<script>
-
-if($(window).width() <= 1024){
-document.getElementById("navbar").style.backgroundColor = "transparent";
-
-document.getElementById("navbar-toggler-icon").addEventListener("click", () => {
-      document.getElementById("navbar").style.backgroundColor = "#323232";
-    });
-}
-</script>
 
 </div>
 

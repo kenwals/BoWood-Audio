@@ -2,6 +2,8 @@
 
 BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This websites primary intention is to display to the visitor what the setup of the studio is like and what services are available.
 
+![ipad preview](/wireframe/ipad-view.png)
+
 ## UX
 
 ### Scope
@@ -64,15 +66,107 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Relational Database tables schema
 
-![DB schema chart](wireframe/db-schema-20210810.png)
+![DB schema chart](wireframe/db-schema-20210815.png)
 
 [image source](https://drawsql.app/code-institute-3/diagrams/ms04#)
 
-##### Products table
+##### Order table
 
 ```bash
-_ID: (auto-generated) ObjectId PRIMARY KEY (Not changeable)
-name : STRING
+
+    order_number = models.CharField(max_length=32, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True, related_name='orders')
+    full_name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.CharField(max_length=20, null=False, blank=False)
+    country = CountryField(blank_label='Country *', null=False, blank=False)
+    postcode = models.CharField(max_length=20, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
+    street_address1 = models.CharField(max_length=80, null=False, blank=False)
+    street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80, null=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
+    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    original_bag = models.TextField(null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+
+```
+
+##### OrderLineItem table
+
+```bash
+
+    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+    product = models.ForeignKey(Product, null=False, blank=False, on_delete=models.CASCADE)
+    product_size = models.CharField(max_length=2, null=True, blank=True) # XS, S, M, L, XL
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+
+```
+
+##### PhotoGallery table
+
+```bash
+
+    label = models.CharField(max_length=254)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+
+```
+
+##### Contact table
+
+```bash
+# This Model is just used for the contact form rendering, no data is saved
+
+    name = models.CharField(max_length=60)
+    email = models.EmailField(max_length=254)
+    subject = models.CharField(max_length=60)
+    message = models.TextField(max_length=3000)
+
+```
+
+##### Product table
+
+```bash
+
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+```
+
+##### UserProfile table
+
+```bash
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
+    default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
+    default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
+    default_county = models.CharField(max_length=80, null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_country = CountryField(blank_label='Country', null=True, blank=True)
+
+```
+
+##### Review table
+
+```bash
+
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    userid = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    review_title = models.CharField(max_length=90)
+    review_text = models.TextField()
 
 ```
 
@@ -80,19 +174,19 @@ name : STRING
 
 #### Home
 
-![Home page ](wireframe/wireframe1.PNG)
+![Home page ](wireframe/wireframe1.png)
 
 #### What we do
 
-![What we do](wireframe/wireframe2.PNG)
+![What we do](wireframe/wireframe2.png)
 
 #### Contact
 
-![Contact ](wireframe/wireframe3.PNG)
+![Contact ](wireframe/wireframe3.png)
 
 #### Gallery
 
-![Gallery ](wireframe/wireframe4.PNG)
+![Gallery ](wireframe/wireframe4.png)
 
 ### Surface
 
@@ -102,13 +196,13 @@ Colours were sourced from a work in progress design on a branding and logo for B
 
 Mainly Dark mode using
 
-#323232 - Graphite
+ #323232 - Graphite
 
-#BB3C2B - Tall poppy
+ #BB3C2B - Tall poppy
 
-#F5CA9F  - Manhattan
+ #F5CA9F  - Manhattan
 
-#CCB19E -  Rodeo Dust
+ #CCB19E -  Rodeo Dust
 
 ![colour swatch ](wireframe/colour-swatch.png)
 
@@ -130,9 +224,9 @@ The font used is Oswald from Google fonts.
 
 ### Existing Features
 
-- Online Shop purchases payment can be accepted using the Stripe API
+- Online Shop purchases payment can be accepted using the Stripe API.
 
-- Messages inputed on the Contact form are emailed to the site owner
+- Messages inputed on the Contact form are emailed to the site owner.
 
 - Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
@@ -142,7 +236,7 @@ The font used is Oswald from Google fonts.
 
 ### Features Left to Implement
 
-
+- Pagination of results on products list page.
 
 ## Technologies Used
 
@@ -162,40 +256,39 @@ The font used is Oswald from Google fonts.
 - Fonts : [Google Fonts](https://fonts.google.com/)
 - Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
 - [django](https://www.djangoproject.com/)
-- django-allauth 
-- pillow 
-- crispy-bootstrap5 
-- django-crispy-forms 
+- django-allauth
+- pillow
+- crispy-bootstrap5
+- django-crispy-forms
 - stripe
-- django-countries 
-- dj-database-url 
+- django-countries
+- dj-database-url
 - psycopg2-binary
-- gunicorn 
+- gunicorn
 - boto3
-- django-storages 
+- django-storages
 
 #### Tools
 
 ##### Productivity
 
 - [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , and planning work.
-- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!. :smiley:
+- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
 ##### Toolbox
 
 - JSfiddle : I used this online sandbox to build and play code before i adding to the project.
-- [Python Tutor](http://pythontutor.com/): I used this very handy online sandbox for experimenting with Python code before applying to this project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
 - DB Schema diagram : [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
 - Virtual Environment : [Pipenv](https://pipenv.pypa.io/en/latest/)
-- Version control: Git
+- Version control: Git and GitHub Desktop app
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
 - Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
 - [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
 - File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
-- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/) **
+- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/)
 - Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
 - Auto formatter for HTML, CSS and JS:  [webformatter](https://webformatter.com/html)
 - px to rem convertor : [nekoCalc](https://nekocalc.com/px-to-rem-converter)
@@ -208,48 +301,175 @@ The font used is Oswald from Google fonts.
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Image editing/cropping : MS Paint
 
-
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Performance Testing
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### Bugs encountered on the way
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### Known issues
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+### Project barriers and solutions
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+### Version control
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### Functionality Testing
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Responsiveness Testing
+
+### CSS3 validator
+
+No errors.  Resource: <https://jigsaw.w3.org/css-validator/>
+
+### HTML5 validator
+
+No errors for the pages listed below. Resource: <https://validator.w3.org/>
+
+- Home / Index
+
+- What we do
+
+- Contact
+
+- Gallery
+
+- Login / Logout
+
+- Register new user
+
+- Profile / My details / Edit my Contact details
+
+- All products
+
+- Product details / reviews add/edit/delete
+
+- Shopping cart
+
+- Checkout
+
+- New product addition
+
+### Python validator
+
+No issues. Results below. Resource:  <https://pep8online.com//>
+
+### JavaScript validator
+
+No issues. Results below. Resource:  <https://jshint.com/>
+
+### Usability Testing
+
+I shared the project on the peer-review channel on slack, and also with friends/family.
+
+I tested and improved accessibility with lighthouse and Firefox developer tools.
+
+Any issues found were resolved.
+
+### Compatibility Testing
+
+| Screen size\Browser                          | Chrome | Firefox | Edge |
+| -------------------------------------------- | ------ | ------- | ---- |
+| Android Mobile phone (Screen width 412px) xs | Pass | Pass | Pass |
+| Android Tablet (Screen width 600px) sm       | Pass | Pass | Pass |
+| Windows laptop (Screen width 2560px)         |   Pass |  Pass |  Pass    |
+
+### Testing User Stories
+
+#### Visitor Stories
+
+1. As a visitor to this site, I want to see what services are available so I can decide if I want to do business here.
+2. As a visitor to this site, I want to see pictures of the studio, so I know who what to expect.
+3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
+4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
+5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
+6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before i buy or share my opinion with other visitors.
+
+#### Owner Stories
+
+1. As the owner of this site, I want a simple landing page, so that visitors can learn about my studio easily and quickly.
+2. As the owner of this site, I want to be able to have an online store so i can sell merchandise and gift vouchers.
+3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
+4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
 
 ## Deployment
 
-While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you use also if you are using a desktop IDE like VSCode. It not necessary with Gitpod . This repo has the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
+I developed this application in VScode, While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables i used with keys masked.
+**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked. You will need to replace with your own.
 
-XXXXX
+```bash
 
-For easy deployment on Heroku.com, you will need a GitHub user account and possibly a Gitpod user account. If you wish to make changes to this repository, please follow the GitHub steps first.
+STRIPE_PUBLIC_KEY=SECRET_KEY
+STRIPE_SECRET_KEY=SECRET_KEY
+STRIPE_WH_SECRET=SECRET_KEY
+SECRET_KEY=SECRET_KEY
+EMAIL_HOST_PASS=SECRET_KEY
+EMAIL_HOST_USER=email_address
+DEVELOPMENT=True
+```
 
-### GitHub
+### Pre-Requisites for Deployment
 
-GitHub is a code hosting platform for version control and collaboration. It's free to enrol for a user account and I would recommend you have one if you wish to deploy this repository and make changes.
+You will need :
 
-When you have a GitHub account you can simply click on the Fork button on the top right corner. This will clone the Wildlife-Rescue repository for your GitHub account, then you can make any changes you like.
+- [Python](https://www.python.org/) installed
 
-### Gitpod
+- A Stripe account
 
-The site can be edited easily on a Gitpod online workspace, you first register a free user account on <http://gitpod.io/>, then download the Gitpod extension on your preferred internet browser. On signing up you will be expected to have a GitHub user account.
+- An AWS account setup.
 
-Once you have the extension on your browser, a green Gitpod button will appear beside this repository in GitHub. For best results fork the repository in your account before you open it in Gitpod.
+- An email address STMP server password or passkey.
+
+- A Django Secret Key.
+
+- an Heruko account with a PostGresSQL app installed.
+
+- A GitHub account.
+
+### Local Deployment
+
+To deploy locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
+
+1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
+2. Above the list of files, click on the **code** button.
+3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+4. Open your preferred Terminal interface.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type **git clone**, then paste the URL you copied earlier above.
+7. Press Enter to create your local clone. more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+### For VScode and Pipenv
+
+8.To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
+9. Your VScode should have Python installed already , if it does please ensure it's there by entering the command below.
+
+```bash
+python --version
+```
+
+10.Now you need to install Pipenv, enter the command below.
+
+```bash
+pip install pipenv
+```
+
+11.As this repository has the setup files made already , you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
+
+```bash
+pipenv shell
+```
+
+12.You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
+
+![pipenv success image](wireframe/pipenv.png)
+
+13.Now to run the application on your desktop , enter the command below and open <http://localhost:8000/> on your preferred browser.
+
+```bash
+python manage.py runserver
+```
 
 ### Heroku
 
@@ -270,24 +490,6 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
-### Local Deployment
-
-If you prefer working on the repository locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
-
-1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
-2. Above the list of files, click on the **code** button.
-3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
-   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
-   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
-4. Open your preferred Terminal interface.
-5. Change the current working directory to the location where you want the cloned directory.
-6. Type **git clone**, then paste the URL you copied earlier above.
-7. Press Enter to create your local clone.
-8. To run the app.py locally you will need to have a XXXXX account, with the supporting variables inputted in the env.py file,
- you may also need to install the packages listed Python app file.
-
-more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-
 ### Contribution and Forking
 
 You may wish to contribute to this website and have your contribution published, if so, you are welcome to follow these steps below.
@@ -303,7 +505,6 @@ You may wish to contribute to this website and have your contribution published,
 
 more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
-
 ## Credits
 
 ### Content
@@ -311,6 +512,7 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 - The foundation of this site is sourced from [Code Institute Educational material - Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 - The Review app is influenced by [LigaMoons Prikly](https://github.com/LigaMoon/Prickly/tree/main/reviews)
 - BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh .
+- Points of referance used for making this web app were [Camden Recording Studios](https://www.camdenrecordingstudios.com/) and [Grouse Lodge](http://grouselodge.com/).
 
 ### Resources
 
@@ -321,7 +523,11 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 - CodingEntrepreneurs youtube video on [how to use Django signals](https://www.youtube.com/watch?v=rEX50LJrFuU)
 
+- [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975) . This is used on homepage to make navbar background transparent on mobile for this initial load.
+
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
+
+- [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
 - [Bootstrap components](https://getbootstrap.com/)
 
@@ -335,10 +541,22 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 ### Media
 
-- Images on front page are sourced from 
+Product Images that were sourced from Unsplash credited below:
 
+1. Mug          [https://unsplash.com/photos/nDd3dIkkOLo](https://unsplash.com/photos/nDd3dIkkOLo)
+2. T-shirt       [https://unsplash.com/photos/m1MRYp556Ew](https://unsplash.com/photos/m1MRYp556Ew)
+3. Sweatshirt     [https://unsplash.com/photos/ikLELWYbyxk](https://unsplash.com/photos/ikLELWYbyxk)
+4. Baseball cap   [https://unsplash.com/photos/b9hqQkKCnqw](https://unsplash.com/photos/b9hqQkKCnqw)
+5. Drum sticks    [https://unsplash.com/photos/bRG2C0FAQEY](https://unsplash.com/photos/bRG2C0FAQEY)  
+6. Water Bottle   [https://unsplash.com/photos/POAQXzBwF7g](https://unsplash.com/photos/POAQXzBwF7g)
+7. Gift Voucher 50 euro  [https://unsplash.com/photos/RNlVIhXrz-Y](https://unsplash.com/photos/RNlVIhXrz-Y)
+8. Gift Voucher 20 euro  [https://unsplash.com/photos/HwU5H9Y6aL8](https://unsplash.com/photos/HwU5H9Y6aL8)
+9. Guitar pick  [https://unsplash.com/photos/s2efxWujA-o](https://unsplash.com/photos/s2efxWujA-o)
+10. Bottle opener  [https://unsplash.com/photos/voJB2goG0us](https://unsplash.com/photos/voJB2goG0us)
+11. Tea towel [https://unsplash.com/photos/8yIYQDR8Qr8](https://unsplash.com/photos/8yIYQDR8Qr8)
+12. Tote Bag [https://unsplash.com/photos/nKK32qJheBY](https://unsplash.com/photos/nKK32qJheBY)
 
 ### Acknowledgements
 
 - Thanks to the Lego and Paul from BoWood Audio.
-- My Mentor [Maranatha Ilesanmi](https://github.com/mbilesanmi) for helpful guidance and laser-sharp attention to detail.
+- My Mentor [Maranatha Ilesanmi](https://github.com/mbilesanmi) for helpful guidance throughout.
