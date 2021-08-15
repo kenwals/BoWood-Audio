@@ -429,9 +429,11 @@ No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
 No issues. Apart from files I didn't create like the settings, webhooks, migrations.
 I believe the below linting error is a false one and can safely be ignored.
-```
+
+```bash
 .\checkout\apps.py:9:9: F401 'checkout.signals' imported but unused
 ```
+
 Resources:  <https://pep8online.com/> and [Flake8](https://flake8.pycqa.org/en/latest/)
 
 ### JavaScript validator
@@ -495,7 +497,7 @@ You will need :
 
 - [Python](https://www.python.org/) installed
 
-- A [Stripe](https://stripe.com/ie) account 
+- A [Stripe](https://stripe.com/ie) account
 
 - An email address STMP server password or passkey.
 
@@ -517,41 +519,43 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above. Example below is HTTPS for a Windows PC.
-```
-git clone https://github.com/kenwals/BoWood-Audio.git
-```
+
+    ```bash
+    git clone https://github.com/kenwals/BoWood-Audio.git
+    ```
+
 7. Press Enter to create your local clone. more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ### For VScode and Pipenv
 
-8. To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
-9. Your VScode should have Python installed already, if it does please ensure it's there by entering the command below.
+1. To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
+2. Your VScode should have Python installed already, if it does please ensure it's there by entering the command below.
 
-```bash
-python --version
-```
+    ```bash
+    python --version
+    ```
 
-10. Now you need to install Pipenv, enter the command below.
+3. Now you need to install Pipenv, enter the command below.
 
-```bash
-pip install pipenv
-```
+    ```bash
+    pip install pipenv
+    ```
 
-11. As this repository has the setup files made already, you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
+4. As this repository has the setup files made already, you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
 
-```bash
-pipenv shell
-```
+    ```bash
+    pipenv shell
+    ```
 
-12. You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
+5. You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
 
-![pipenv success image](wireframe/pipenv.png)
+    ![pipenv success image](wireframe/pipenv.png)
 
-13. Now to run the application on your desktop, enter the command below and open <http://localhost:8000/> on your preferred browser.
+6. Now to run the application on your desktop, enter the command below and open <http://localhost:8000/> on your preferred browser.
 
-```bash
-python manage.py runserver
-```
+    ```bash
+    python manage.py runserver
+    ```
 
 ### Heroku
 
