@@ -20,6 +20,8 @@ from django.conf.urls.static import static
 from django.views.generic.base import RedirectView
 from django.contrib.staticfiles.storage import staticfiles_storage
 
+favicons_url = staticfiles_storage.url("favicons/favicon.ico")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
@@ -29,8 +31,5 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profiles/', include('profiles.urls')),
     path('reviews/', include('reviews.urls')),
-    path("favicon.ico",
-    RedirectView.as_view(
-        url=staticfiles_storage.url("favicons/favicon.ico")
-    ),),
+    path("favicon.ico", RedirectView.as_view(favicons_url),),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

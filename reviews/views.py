@@ -1,5 +1,5 @@
 from django.contrib import messages
-from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.shortcuts import get_object_or_404, redirect, reverse
 from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
@@ -15,7 +15,8 @@ def add_review(request, product_id):
     # checks if the user has submitted a review already
     existing_review = Review.objects.filter(userid=user, product=product)
     if existing_review.count() > 0:
-        messages.error(request, 'Something went wrong! You have reviewed this item already')
+        messages.error(request, 'Something went wrong! \
+            You have reviewed this item already')
     else:
         if form.is_valid():
             review_form = form.save(commit=False)
@@ -24,7 +25,8 @@ def add_review(request, product_id):
             review_form.save()
             messages.success(request, "Your review has been added now")
         else:
-            messages.error(request, 'Failed to add review, please ensure form is valid.')
+            messages.error(request, 'Failed to add review, \
+                please ensure form is valid.')
 
     return redirect(reverse('product_detail', args=(product_id,)))
 
@@ -38,7 +40,8 @@ def edit_review(request, review_id):
             form.save()
             messages.success(request, "Your review has been edited now")
         else:
-            messages.error(request, 'Failed to edit review, please ensure form is valid.')
+            messages.error(request, 'Failed to edit review, \
+                please ensure form is valid.')
 
     return redirect(reverse('product_detail', args=(review.product.id,)))
 

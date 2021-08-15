@@ -1,5 +1,4 @@
 from django import forms
-from django.forms import fields
 from .models import Review
 
 
@@ -23,7 +22,9 @@ class ReviewForm(forms.ModelForm):
         ]
 
         widgets = {
-            'review_title': forms.TextInput(attrs={'placeholder': 'Enter your review title here'}),
-            'review_text': forms.Textarea(attrs={'placeholder': 'Enter your review here'}),
+            'review_title': forms.TextInput(
+                attrs={'placeholder': 'Enter your review title here'}),
+            'review_text': forms.Textarea(
+                attrs={'placeholder': 'Enter your review here'}),
             'rating': forms.Select(choices=rating_choices)
         }

@@ -34,10 +34,13 @@ def contact(request):
                 message_email,  # from email
                 ['kenwals@gmail.com'],  # To Email list
             )
-            messages.info(request, f'Thank you {message_name}, Your message has been sent now!')
-            return render(request, 'home/contact.html', {'message_name': message_name})
+            messages.info(request, f'Thank you {message_name},'
+                          ' Your message has been sent now!')
+            return render(request, 'home/contact.html', {
+                'message_name': message_name})
         else:
-            messages.error(request, 'Failed to send message, please ensure fields are filled in correctly.')
+            messages.error(request, 'Failed to send message, \
+                please ensure fields are filled in correctly.')
 
     else:
         form = ContactForm()

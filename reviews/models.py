@@ -1,6 +1,5 @@
 from products.models import Product, UserProfile
 from django.db import models
-from django.db.models.fields import DecimalField
 from django.db.models.signals import post_save, post_delete
 from django.db.models import Avg
 from django.dispatch import receiver
@@ -8,7 +7,8 @@ from django.dispatch import receiver
 
 class Review(models.Model):
 
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2,
+                                 null=True, blank=True)
     userid = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     review_title = models.CharField(max_length=90)
