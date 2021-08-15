@@ -28,7 +28,7 @@ The time allocated to build this project was shorter than previous projects, luc
 
 ### Structure
 
-This full-stack site is put together with HTML, using the bootstrap framework along with some CSS on the frontend.
+This full-stack site is put together with HTML, using the bootstrap framework along with some CSS and JavaScript on the frontend.
 
 The frontend is integrated into the backend using Python and Django with a PostgreSQL Database.
 
@@ -196,13 +196,13 @@ Colours were sourced from a work in progress design on branding and logo for BoW
 
 Mainly Dark mode using
 
- #323232 - Graphite
+ #323232 - Graphite or Jet
 
- #BB3C2B - Tall poppy
+ #BB3C2B - Tall poppy or International Orange Gold
 
- #F5CA9F  - Manhattan
+ #F5CA9F  - Manhattan or Peach Crayola
 
- #CCB19E -  Rodeo Dust
+ #CCB19E -  Rodeo Dust or Desert Sand
 
 ![colour swatch ](wireframe/colour-swatch.png)
 
@@ -272,7 +272,7 @@ The font used is Oswald from Google fonts.
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/): I use Notion for documenting personal notes , and planning work.
+- [Notion](https://www.notion.so/): I used Notion for documenting personal notes, and planning work.
 - Pomodoro timer: [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner: [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
@@ -297,7 +297,6 @@ The font used is Oswald from Google fonts.
 - Markdown linter: markdownlint extension on VS Code.
 - Colour names: [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
 - Colour swatches: [Coolors](https://coolors.co/)
-- [site preview tool](http://ami.responsivedesign.is/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Image editing/cropping: MS Paint
 
@@ -414,17 +413,15 @@ You will need :
 
 - [Python](https://www.python.org/) installed
 
-- A Stripe account
-
-- An AWS account setup.
+- A [Stripe](https://stripe.com/ie) account 
 
 - An email address STMP server password or passkey.
 
-- A Django Secret Key.
+- A Django Secret Key. Get one [here](https://djecrety.ir/)
 
-- an Heruko account with a PostGresSQL app installed.
+- An [Heruko](https://www.heroku.com/) account with a PostGresSQL app installed.
 
-- A GitHub account.
+- A [GitHub](https://github.com/) account.
 
 ### Local Deployment
 
