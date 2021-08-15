@@ -434,7 +434,10 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
    To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
-6. Type **git clone**, then paste the URL you copied earlier above.
+6. Type **git clone**, then paste the URL you copied earlier above. Example below is HTTPS for a Windows PC.
+```
+git clone https://github.com/kenwals/BoWood-Audio.git
+```
 7. Press Enter to create your local clone. more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ### For VScode and Pipenv
