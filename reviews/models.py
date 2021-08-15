@@ -16,7 +16,7 @@ class Review(models.Model):
     review_text = models.TextField()
 
     def __str__(self):
-        return self.name
+        return self.review_title
 
 
 @receiver(post_save, sender=Review)
