@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Category, Product
@@ -67,6 +68,9 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id)
+    paginator = Paginator(reviews, 2)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     form = ReviewForm()
     if request.user.is_authenticated:
         user = UserProfile.objects.get(user=request.user)
@@ -88,6 +92,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'reviews': reviews,
+        'page_obj': page_obj,
         'review_form': form,
         'edit_review_form': edit_review_form,
     }
