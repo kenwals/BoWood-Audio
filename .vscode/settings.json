@@ -24,5 +24,8 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "editor.defaultFormatter": "HookyQR.beautify",
    "beautify.config": "",
-   "editor.fontSize": 16
+   "editor.fontSize": 16,
+   "python.linting.ignorePatterns": [
+      "**/site-packages/**/*.py"
+   ]
 }
