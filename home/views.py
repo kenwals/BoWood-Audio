@@ -18,7 +18,10 @@ def whatwedo(request):
 
 
 def contact(request):
-    """ A view to return the contact page """
+    """ 
+    This view populates and takes messages 
+    from the contact page
+    """
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -48,7 +51,7 @@ def contact(request):
 
 
 def gallery(request):
-    """ A view to return the gallery page """
+    """ This views passed photo to the gallery page """
 
     photos = PhotoGallery.objects.all()
 

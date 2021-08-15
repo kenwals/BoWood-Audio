@@ -22,7 +22,8 @@ class Review(models.Model):
 @receiver(post_save, sender=Review)
 def update_on_save(sender, instance, created, **kwargs):
     """
-    Update products rating on review save/update
+    Update products rating automatically each time
+    the review model is saved/updated
     """
     product = Product.objects.get(name=instance.product)
     reviews = Review.objects.filter(product=product)
@@ -34,7 +35,8 @@ def update_on_save(sender, instance, created, **kwargs):
 @receiver(post_delete, sender=Review)
 def update_on_delete(sender, instance, **kwargs):
     """
-    Update products rating on review delete
+    Update products rating automatically each time
+    a review model is deleted
     """
     product = Product.objects.get(name=instance.product)
     reviews = Review.objects.filter(product=product)
