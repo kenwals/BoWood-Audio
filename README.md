@@ -1,6 +1,6 @@
 # BoWood Audio
 
-BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This websites primary intention is to display to the visitor what the setup of the studio is like and what services are available.
+BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the setup of the studio is like and what services are available.
 
 ![ipad preview](/wireframe/ipad-view.png)
 
@@ -8,12 +8,12 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 
 ### Scope
 
-The time allocated to build this project was shorter then previous projects, luckily for me the site owner is very flexible with the scope. The site will be first made to an MVP, and if there is additional time, content/features can be added.
+The time allocated to build this project was shorter than previous projects, luckily for me, the site owner is very flexible with the scope. The site will be first made to an MVP, and if there is additional time, content/features can be added.
 
 ### Visitor Goals
 
 1. As a visitor to this site, I want to see what services are available so I can decide if I want to do business here.
-2. As a visitor to this site, I want to see pictures of the studio, so I know who what to expect.
+2. As a visitor to this site, I want to see pictures of the studio, so I know what to expect.
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
@@ -22,15 +22,15 @@ The time allocated to build this project was shorter then previous projects, luc
 ### Owner Goals
 
 1. As the owner of this site, I want a simple landing page, so that visitors can learn about my studio easily and quickly.
-2. As the owner of this site, I want to be able to have an online store so i can sell merchandise and gift vouchers.
-3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
-4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
+2. As the owner of this site, I want to be able to have an online store so I can sell merchandise and gift vouchers.
+3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
+4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
 ### Structure
 
-This full stack site is put together with HTML, using the bootstrap framework along with some CSS on the frontend.
+This full-stack site is put together with HTML, using the bootstrap framework along with some CSS on the frontend.
 
-The frontend is integreated into the backend using Python and Django with a PostgreSQL Database.
+The frontend is integrated into the backend using Python and Django with a PostgreSQL Database.
 
 ### Skeleton
 
@@ -192,7 +192,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 #### Colours
 
-Colours were sourced from a work in progress design on a branding and logo for BoWood Audio.
+Colours were sourced from a work in progress design on branding and logo for BoWood Audio.
 
 Mainly Dark mode using
 
@@ -208,11 +208,11 @@ Mainly Dark mode using
 
 #### Icons
 
-Font Awescome is used for icons
+Font Awesome is used for icons
 
 #### Images
 
-Images are sourced from unsplash and site owner.
+Images are sourced from Unsplash and the site owner.
 
 #### Fonts
 
@@ -226,17 +226,17 @@ The font used is Oswald from Google fonts.
 
 - Online Shop purchases payment can be accepted using the Stripe API.
 
-- Messages inputed on the Contact form are emailed to the site owner.
+- Messages inputted on the Contact form are emailed to the site owner.
 
-- Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
+- The Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
-- Visitors have full CRUD access to product reviews they submit.
+- Visitors have full CRUD access to the product reviews they submit.
 
-- The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/) . Each change on the reviews model table triggers the particular product's rating to be re-calculated.
+- The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/). Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
 ### Features Left to Implement
 
-- Pagination of results on products list page.
+- Pagination of results on the products list page.
 
 ## Technologies Used
 
@@ -249,12 +249,12 @@ The font used is Oswald from Google fonts.
 - Python
 - JavaScript/Jquery
 
-#### Libraries , Frameworks and Packages
+#### Libraries, Frameworks and Packages
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-- Fonts : [Google Fonts](https://fonts.google.com/)
-- Icons : [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
+- Fonts: [Google Fonts](https://fonts.google.com/)
+- Icons: [FontAwesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1)
 - [django](https://www.djangoproject.com/)
 - django-allauth
 - pillow
@@ -272,34 +272,34 @@ The font used is Oswald from Google fonts.
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/) : I use Notion for documenting personal notes , and planning work.
-- Pomodoro timer : [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
-- Kanban planner : [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
+- [Notion](https://www.notion.so/): I use Notion for documenting personal notes , and planning work.
+- Pomodoro timer: [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
+- Kanban planner: [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
 ##### Toolbox
 
-- JSfiddle : I used this online sandbox to build and play code before i adding to the project.
+- JSfiddle: I used this online sandbox to build and play code before i adding to the project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
-- DB Schema diagram : [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
+- DB Schema diagram: [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
-- Virtual Environment : [Pipenv](https://pipenv.pypa.io/en/latest/)
+- Virtual Environment: [Pipenv](https://pipenv.pypa.io/en/latest/)
 - Version control: Git and GitHub Desktop app
 - Markdown editor: [Typora](https://typora.io/) was used when appropriate, VS code editor was used for most updates.
-- Markdown Preview Github Styling : this brilliant vscode extension helps me read my markdown in Github format.
+- Markdown Preview Github Styling: this brilliant vscode extension helps me read my markdown in Github format.
 - [markdown table of contents creator](https://ecotrust-canada.github.io/markdown-toc/)
 - File renaming utility: PowerRename from [PowerToys on Windows 10](https://www.windowscentral.com/how-bulk-rename-your-files-windows-10-powertoys)
-- Favicon creator : [favicon.io](https://favicon.io/favicon-generator/)
-- Autoprefixer CSS : [Autoprefixer](https://autoprefixer.github.io/)
+- Favicon creator: [favicon.io](https://favicon.io/favicon-generator/)
+- Autoprefixer CSS: [Autoprefixer](https://autoprefixer.github.io/)
 - Auto formatter for HTML, CSS and JS:  [webformatter](https://webformatter.com/html)
-- px to rem convertor : [nekoCalc](https://nekocalc.com/px-to-rem-converter)
-- JavaScript linter : [jshint](https://jshint.com/)
-- Python linter :  [Pep8 online](http://pep8online.com/)
-- Markdown linter : markdownlint extension on VS Code.
-- Colour names : [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
-- Colour swatches : [Coolors](https://coolors.co/)
+- px to rem convertor: [nekoCalc](https://nekocalc.com/px-to-rem-converter)
+- JavaScript linter: [jshint](https://jshint.com/)
+- Python linter:  [Pep8 online](http://pep8online.com/)
+- Markdown linter: markdownlint extension on VS Code.
+- Colour names: [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
+- Colour swatches: [Coolors](https://coolors.co/)
 - [site preview tool](http://ami.responsivedesign.is/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
-- Image editing/cropping : MS Paint
+- Image editing/cropping: MS Paint
 
 ## Testing
 
@@ -378,24 +378,24 @@ Any issues found were resolved.
 #### Visitor Stories
 
 1. As a visitor to this site, I want to see what services are available so I can decide if I want to do business here.
-2. As a visitor to this site, I want to see pictures of the studio, so I know who what to expect.
+2. As a visitor to this site, I want to see pictures of the studio, so I know what to expect.
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
-6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before i buy or share my opinion with other visitors.
+6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before I buy or share my opinion with other visitors.
 
 #### Owner Stories
 
 1. As the owner of this site, I want a simple landing page, so that visitors can learn about my studio easily and quickly.
-2. As the owner of this site, I want to be able to have an online store so i can sell merchandise and gift vouchers.
-3. As the owner of this site, I want a receipt / proof of purchase emailed to myself and available to myself.
-4. As the owner of this site, I want to showcase some of my work, so the user gets a idea of my skills and talent.
+2. As the owner of this site, I want to be able to have an online store so I can sell merchandise and gift vouchers.
+3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
+4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
 ## Deployment
 
-I developed this application in VScode, While developing this application i used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependancy setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
+I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your own keys. Here is a sample of the Environmental variables file i used with keys masked. You will need to replace with your own.
+**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -438,34 +438,34 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above.
-7. Press Enter to create your local clone. more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+7. Press Enter to create your local clone. more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ### For VScode and Pipenv
 
-8.To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
-9. Your VScode should have Python installed already , if it does please ensure it's there by entering the command below.
+8. To run the manage.py in VScode terminal you will need supporting Environmental variables inputted in the .env file(example above).
+9. Your VScode should have Python installed already, if it does please ensure it's there by entering the command below.
 
 ```bash
 python --version
 ```
 
-10.Now you need to install Pipenv, enter the command below.
+10. Now you need to install Pipenv, enter the command below.
 
 ```bash
 pip install pipenv
 ```
 
-11.As this repository has the setup files made already , you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
+11. As this repository has the setup files made already, you can start the environment by entering the command below. More info on Pipenv [here](https://www.youtube.com/watch?v=6Qmnh5C4Pmo) and [here](https://pipenv.pypa.io/en/latest/)
 
 ```bash
 pipenv shell
 ```
 
-12.You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
+12. You should notice a message like below saying loading ".env environment variables..." this is good, it means your keys are in place.
 
 ![pipenv success image](wireframe/pipenv.png)
 
-13.Now to run the application on your desktop , enter the command below and open <http://localhost:8000/> on your preferred browser.
+13. Now to run the application on your desktop, enter the command below and open <http://localhost:8000/> on your preferred browser.
 
 ```bash
 python manage.py runserver
@@ -496,14 +496,14 @@ You may wish to contribute to this website and have your contribution published,
 
 1. Go to the GitHub website and log in.
 2. Open <https://github.com/kenwals/bowood-audio>
-3. In the top right-hand corner you will see a fork button, click on this **Fork button**.
+3. In the top right-hand corner, you will see a fork button, click on this **Fork button**.
 4. This will create a copy of the BoWood Audio repository in your Github account.
 5. Run the project locally and make your required changes.
 6. You can push these changes to your repository.
 7. Once you're finished making changes you can locate the **New Pull Request** button just above the file listing in the original repository (<https://github.com/kenwals/bowood-audio>).
 8. Your pull request will be reviewed and if approved, it will be merged into the main version of the BoWood Audio repository at a future date.
 
-more detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
+more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
 
 ## Credits
 
@@ -511,19 +511,19 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 - The foundation of this site is sourced from [Code Institute Educational material - Boutique Ado](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
 - The Review app is influenced by [LigaMoons Prikly](https://github.com/LigaMoon/Prickly/tree/main/reviews)
-- BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh .
-- Points of referance used for making this web app were [Camden Recording Studios](https://www.camdenrecordingstudios.com/) and [Grouse Lodge](http://grouselodge.com/).
+- BoWood Audio is a home studio belonging to Paul O'Hara (aka Lego from the band Royseven), content was provided by Paul O'Hara and Paul Walsh.
+- Points of reference used for making this web app were [Camden Recording Studios](https://www.camdenrecordingstudios.com/) and [Grouse Lodge](http://grouselodge.com/).
 
 ### Resources
 
-- [trick used for navbar icon](https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color)
+- [Trick used for navbar icon](https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color)
 
 - Codemy.com youtube videos on Django contact page setup [here](https://www.youtube.com/watch?v=xNqnHmXIuzU) and
 [here](https://www.youtube.com/watch?v=w4ilq6Zk-08)
 
 - CodingEntrepreneurs youtube video on [how to use Django signals](https://www.youtube.com/watch?v=rEX50LJrFuU)
 
-- [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975) . This is used on homepage to make navbar background transparent on mobile for this initial load.
+- [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975). This is used on the homepage to make the navbar background transparent on mobile for this initial load.
 
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
@@ -541,7 +541,7 @@ more detailed instructions available [here](https://docs.github.com/en/free-pro-
 
 ### Media
 
-Product Images that were sourced from Unsplash credited below:
+Product Images that were sourced from Unsplash are credited below:
 
 1. Mug          [https://unsplash.com/photos/nDd3dIkkOLo](https://unsplash.com/photos/nDd3dIkkOLo)
 2. T-shirt       [https://unsplash.com/photos/m1MRYp556Ew](https://unsplash.com/photos/m1MRYp556Ew)
