@@ -63,6 +63,7 @@ body {
 } /* this keeps sections narrow for smaller screens */
 
 .update-link,
+.text-danger,
 .remove-item {
     cursor: pointer;
 }
