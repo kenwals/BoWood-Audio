@@ -4,6 +4,81 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 
 ![ipad preview](/wireframe/ipad-view.png)
 
+---
+
+## Table of contents
+
+
+- [BoWood Audio](#bowood-audio)
+  * [UX](#ux)
+    + [Scope](#scope)
+    + [Visitor Goals](#visitor-goals)
+    + [Owner Goals](#owner-goals)
+    + [Structure](#structure)
+    + [Skeleton](#skeleton)
+      - [Website page line up](#website-page-line-up)
+    + [Database Schema](#database-schema)
+      - [Relational Database tables schema](#relational-database-tables-schema)
+        * [Order table](#order-table)
+        * [OrderLineItem table](#orderlineitem-table)
+        * [PhotoGallery table](#photogallery-table)
+        * [Contact table](#contact-table)
+        * [Product table](#product-table)
+        * [UserProfile table](#userprofile-table)
+        * [Review table](#review-table)
+      - [Wireframes of pages](#wireframes-of-pages)
+      - [Home](#home)
+      - [What we do](#what-we-do)
+      - [Contact](#contact)
+      - [Gallery](#gallery)
+    + [Surface](#surface)
+      - [Colours](#colours)
+      - [Icons](#icons)
+      - [Images](#images)
+      - [Fonts](#fonts)
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Features Left to Implement](#features-left-to-implement)
+  * [Technologies Used](#technologies-used)
+    + [Frontend](#frontend)
+      - [Languages](#languages)
+      - [Libraries, Frameworks and Packages include](#libraries--frameworks-and-packages-include)
+      - [Tools](#tools)
+        * [Productivity](#productivity)
+        * [Toolbox](#toolbox)
+  * [Testing](#testing)
+    + [Performance Testing](#performance-testing)
+    + [Known issues](#known-issues)
+      - [Not secure warning / Unsecure connection](#not-secure-warning---unsecure-connection)
+      - [Pep8 e501 errors](#pep8-e501-errors)
+    + [Project barriers and solutions](#project-barriers-and-solutions)
+      - [Time and work life balance](#time-and-work-life-balance)
+    + [Version control](#version-control)
+    + [Functionality Testing](#functionality-testing)
+    + [Responsiveness Testing](#responsiveness-testing)
+    + [CSS3 validator](#css3-validator)
+    + [HTML5 validator](#html5-validator)
+    + [Python validator](#python-validator)
+    + [JavaScript validator](#javascript-validator)
+    + [Usability Testing](#usability-testing)
+    + [Compatibility Testing](#compatibility-testing)
+    + [Testing User Stories](#testing-user-stories)
+      - [Visitor Stories](#visitor-stories)
+      - [Owner Stories](#owner-stories)
+  * [Deployment](#deployment)
+    + [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
+    + [Local Deployment](#local-deployment)
+    + [For VScode and Pipenv](#for-vscode-and-pipenv)
+    + [Heroku](#heroku)
+    + [Contribution and Forking](#contribution-and-forking)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Resources](#resources)
+    + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
+
+<!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
+
 ## UX
 
 ### Scope
@@ -220,6 +295,10 @@ The font used is Oswald from Google fonts.
 
 ![font sample ](wireframe/font-sample.PNG)
 
+back to [contents](#table-of-contents)
+
+---
+
 ## Features
 
 ### Existing Features
@@ -234,9 +313,15 @@ The font used is Oswald from Google fonts.
 
 - The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/). Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
+- Results for Products and review listing in the shop are paginated. 
+
 ### Features Left to Implement
 
-- Pagination of results on the products list page.
+- Gift Voucher journal handling.
+
+back to [contents](#table-of-contents)
+
+---
 
 ## Technologies Used
 
@@ -249,7 +334,7 @@ The font used is Oswald from Google fonts.
 - Python
 - JavaScript/Jquery
 
-#### Libraries, Frameworks and Packages
+#### Libraries, Frameworks and Packages include
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
@@ -300,6 +385,10 @@ The font used is Oswald from Google fonts.
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Image editing/cropping: MS Paint
 
+back to [contents](#table-of-contents)
+
+---
+
 ## Testing
 
 ### Performance Testing
@@ -328,13 +417,11 @@ The font used is Oswald from Google fonts.
 
 - New product addition :heavy_check_mark:
 
-### Bugs encountered on the way
-
 ### Known issues
 
 #### Not secure warning / Unsecure connection
 
-This Web Application has Not secure warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing, so i had to manually test this.
+This Web Application has an ot secure warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing, so i had to manually test these.
 
 #### Pep8 e501 errors
 
@@ -381,11 +468,12 @@ For version control, I used the UI on VS Code for making git commits or the GitH
 As this web application is not secure, i had to manually test responsiveness with my own devices and Chrome Dev tools.
 No issues found on the screen sizes below.
 
-| Screen size                          | Chrome |
+| Screen size                          | Result |
 | -------------------------------------------- | ------ |
+| iPhone 5/SE DevTools emulation (Screen width 326px) xs | Pass |
 | Android Mobile phone (Screen width 412px) xs | Pass |
 | Android Tablet (Screen width 600px) sm       | Pass |
-| Windows laptop (Screen width 2560px)         |   Pass |
+| Windows laptop (Screen width 2560px) xxl        |   Pass |
 
 ### CSS3 validator
 
@@ -474,11 +562,15 @@ Any issues found were resolved.
 3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
 4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
+back to [contents](#table-of-contents)
+
+---
+
 ## Deployment
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
+**Please note** This Production version of the project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -507,15 +599,17 @@ You will need :
 
 - A [GitHub](https://github.com/) account.
 
+- An (optional) [Amazon Web Services](https://aws.amazon.com/) account.
+
 ### Local Deployment
 
 To deploy locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
 
 1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
 2. Above the list of files, click on the **code** button.
-3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
-   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
-   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+3. - To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+   - To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+   - To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above. Example below is HTTPS for a Windows PC.
@@ -573,7 +667,12 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 4. Create a [Heroku user account](https://signup.heroku.com/login)
 5. Click on the New button and choose to create a new app.
 6. Input an app name and choose a region that is closest to you.
-7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list i use on my Heroku deployed version. The AWS keys are optional. 
+
+![Heroku environmental variable](wireframe/heroku1.png)
+
+![Heroku environmental variable ](wireframe/heroku2.png)
+
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
 ### Contribution and Forking
@@ -590,6 +689,10 @@ You may wish to contribute to this website and have your contribution published,
 8. Your pull request will be reviewed and if approved, it will be merged into the main version of the BoWood Audio repository at a future date.
 
 more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
+
+back to [contents](#table-of-contents)
+
+---
 
 ## Credits
 
@@ -612,6 +715,8 @@ more detailed instructions are available [here](https://docs.github.com/en/free-
 - [How to make javascript dynamic to screen width](https://stackoverflow.com/questions/17237935/jquery-execute-scripts-based-on-screen-size/17237975). This is used on the homepage to make the navbar background transparent on mobile for this initial load.
 
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
+
+- Pagination in Django [here](https://docs.djangoproject.com/en/3.2/topics/pagination/) and [here](https://www.ordinarycoders.com/blog/article/django-pagination)
 
 - [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
