@@ -479,7 +479,7 @@ Any issues found were resolved.
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
+**Please note** This Production version of the project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -508,15 +508,17 @@ You will need :
 
 - A [GitHub](https://github.com/) account.
 
+- An (optional) [Amazon Web Services](https://aws.amazon.com/) account.
+
 ### Local Deployment
 
 To deploy locally on your preferred Desktop IDE, you can clone the repository to your desktop by the following steps.
 
 1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
 2. Above the list of files, click on the **code** button.
-3. To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
-   To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
-   To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+3. - To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+   - To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+   - To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above. Example below is HTTPS for a Windows PC.
@@ -574,7 +576,12 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 4. Create a [Heroku user account](https://signup.heroku.com/login)
 5. Click on the New button and choose to create a new app.
 6. Input an app name and choose a region that is closest to you.
-7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list i use on my Heroku deployed version. The AWS keys are optional. 
+
+![Heroku environmental variable](wireframe/heroku1.png)
+
+![Heroku environmental variable ](wireframe/heroku2.png)
+
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
 ### Contribution and Forking
