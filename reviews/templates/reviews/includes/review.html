@@ -85,10 +85,6 @@
             <li class="page-item">
               <a class="page-link" href="?page={{ reviews.previous_page_number }}">Previous</a>
             </li>
-          {% else %}
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-            </li>
           {% endif %}
           {% for i in reviews.paginator.page_range %}
             {% if reviews.number == i %}
@@ -105,10 +101,6 @@
           {% if reviews.has_next %}
             <li class="page-item">
               <a class="page-link" href="?page={{ reviews.next_page_number }}">Next</a>
-            </li>
-          {% else %}
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
             </li>
           {% endif %}
         </ul>

@@ -189,7 +189,7 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #BB3C2B;
+  background-color: #323232;
   color: #fff;
 }
 
@@ -296,6 +296,18 @@ color: #17a2b8; /* text-info */
   border-color: #dc3545;
   border-radius: 0;
 }
+
+/* Pagination */
+
+.page-link{
+  color: #F5CA9F;
+  background-color: transparent;
+ }
+ 
+ .page-item.active .page-link {
+  background-color: #F5CA9F;
+  color: #323232;
+ }
 
 
 /*   Review Modals */
