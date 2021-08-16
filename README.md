@@ -4,6 +4,81 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 
 ![ipad preview](/wireframe/ipad-view.png)
 
+---
+
+## Table of contents
+
+
+- [BoWood Audio](#bowood-audio)
+  * [UX](#ux)
+    + [Scope](#scope)
+    + [Visitor Goals](#visitor-goals)
+    + [Owner Goals](#owner-goals)
+    + [Structure](#structure)
+    + [Skeleton](#skeleton)
+      - [Website page line up](#website-page-line-up)
+    + [Database Schema](#database-schema)
+      - [Relational Database tables schema](#relational-database-tables-schema)
+        * [Order table](#order-table)
+        * [OrderLineItem table](#orderlineitem-table)
+        * [PhotoGallery table](#photogallery-table)
+        * [Contact table](#contact-table)
+        * [Product table](#product-table)
+        * [UserProfile table](#userprofile-table)
+        * [Review table](#review-table)
+      - [Wireframes of pages](#wireframes-of-pages)
+      - [Home](#home)
+      - [What we do](#what-we-do)
+      - [Contact](#contact)
+      - [Gallery](#gallery)
+    + [Surface](#surface)
+      - [Colours](#colours)
+      - [Icons](#icons)
+      - [Images](#images)
+      - [Fonts](#fonts)
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Features Left to Implement](#features-left-to-implement)
+  * [Technologies Used](#technologies-used)
+    + [Frontend](#frontend)
+      - [Languages](#languages)
+      - [Libraries, Frameworks and Packages include](#libraries--frameworks-and-packages-include)
+      - [Tools](#tools)
+        * [Productivity](#productivity)
+        * [Toolbox](#toolbox)
+  * [Testing](#testing)
+    + [Performance Testing](#performance-testing)
+    + [Known issues](#known-issues)
+      - [Not secure warning / Unsecure connection](#not-secure-warning---unsecure-connection)
+      - [Pep8 e501 errors](#pep8-e501-errors)
+    + [Project barriers and solutions](#project-barriers-and-solutions)
+      - [Time and work life balance](#time-and-work-life-balance)
+    + [Version control](#version-control)
+    + [Functionality Testing](#functionality-testing)
+    + [Responsiveness Testing](#responsiveness-testing)
+    + [CSS3 validator](#css3-validator)
+    + [HTML5 validator](#html5-validator)
+    + [Python validator](#python-validator)
+    + [JavaScript validator](#javascript-validator)
+    + [Usability Testing](#usability-testing)
+    + [Compatibility Testing](#compatibility-testing)
+    + [Testing User Stories](#testing-user-stories)
+      - [Visitor Stories](#visitor-stories)
+      - [Owner Stories](#owner-stories)
+  * [Deployment](#deployment)
+    + [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
+    + [Local Deployment](#local-deployment)
+    + [For VScode and Pipenv](#for-vscode-and-pipenv)
+    + [Heroku](#heroku)
+    + [Contribution and Forking](#contribution-and-forking)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Resources](#resources)
+    + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
+
+<!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
+
 ## UX
 
 ### Scope
@@ -220,6 +295,10 @@ The font used is Oswald from Google fonts.
 
 ![font sample ](wireframe/font-sample.PNG)
 
+back to [contents](#table-of-contents)
+
+---
+
 ## Features
 
 ### Existing Features
@@ -239,6 +318,10 @@ The font used is Oswald from Google fonts.
 ### Features Left to Implement
 
 - Gift Voucher journal handling.
+
+back to [contents](#table-of-contents)
+
+---
 
 ## Technologies Used
 
@@ -301,6 +384,10 @@ The font used is Oswald from Google fonts.
 - Colour swatches: [Coolors](https://coolors.co/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
 - Image editing/cropping: MS Paint
+
+back to [contents](#table-of-contents)
+
+---
 
 ## Testing
 
@@ -475,6 +562,10 @@ Any issues found were resolved.
 3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
 4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
+back to [contents](#table-of-contents)
+
+---
+
 ## Deployment
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
@@ -598,6 +689,10 @@ You may wish to contribute to this website and have your contribution published,
 8. Your pull request will be reviewed and if approved, it will be merged into the main version of the BoWood Audio repository at a future date.
 
 more detailed instructions are available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
+
+back to [contents](#table-of-contents)
+
+---
 
 ## Credits
 
