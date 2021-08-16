@@ -32,10 +32,10 @@ def contact(request):
             print(message_email)
             # send an email
             send_mail(
-                message_subject + ': message from ' + message_name,  # subject
-                message + " RECEIVED FROM : " + message_email,  # message
-                message_email,  # from email
-                ['kenwals@gmail.com'],  # To Email list
+                message_subject + ': message from ' + message_name,
+                message + " RECEIVED FROM : " + message_email,
+                message_email,
+                ['kenwals@gmail.com'],
             )
             messages.info(request, f'Thank you {message_name},'
                           ' Your message has been sent now!')
