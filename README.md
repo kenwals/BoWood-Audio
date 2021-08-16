@@ -234,9 +234,11 @@ The font used is Oswald from Google fonts.
 
 - The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/). Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
+- Results for Products and review listing in the shop are paginated. 
+
 ### Features Left to Implement
 
-- Pagination of results on the products list page.
+- Gift Voucher journal handling.
 
 ## Technologies Used
 
@@ -249,7 +251,7 @@ The font used is Oswald from Google fonts.
 - Python
 - JavaScript/Jquery
 
-#### Libraries, Frameworks and Packages
+#### Libraries, Frameworks and Packages include
 
 - [Bootstrap](https://getbootstrap.com/)
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
@@ -328,13 +330,11 @@ The font used is Oswald from Google fonts.
 
 - New product addition :heavy_check_mark:
 
-### Bugs encountered on the way
-
 ### Known issues
 
 #### Not secure warning / Unsecure connection
 
-This Web Application has Not secure warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing, so i had to manually test this.
+This Web Application has an ot secure warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing, so i had to manually test these.
 
 #### Pep8 e501 errors
 
@@ -381,11 +381,12 @@ For version control, I used the UI on VS Code for making git commits or the GitH
 As this web application is not secure, i had to manually test responsiveness with my own devices and Chrome Dev tools.
 No issues found on the screen sizes below.
 
-| Screen size                          | Chrome |
+| Screen size                          | Result |
 | -------------------------------------------- | ------ |
+| iPhone 5/SE DevTools emulation (Screen width 326px) xs | Pass |
 | Android Mobile phone (Screen width 412px) xs | Pass |
 | Android Tablet (Screen width 600px) sm       | Pass |
-| Windows laptop (Screen width 2560px)         |   Pass |
+| Windows laptop (Screen width 2560px) xxl        |   Pass |
 
 ### CSS3 validator
 
