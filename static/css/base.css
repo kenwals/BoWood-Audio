@@ -113,9 +113,11 @@ input[name='q']::placeholder {
 
 /* ------------------------------- bootstrap toasts */
 
-.toast, .toast-header{
-  background-color: #BB3C2B;
-  color : #fff;
+.toast,
+.toast-header, 
+.toast-body {
+  background-color: #CCb19E;
+  color : #000;
 }
 
 .message-container {
@@ -124,8 +126,8 @@ input[name='q']::placeholder {
   top: 72px;
   right: 5px; 
   z-index: 99999999999;
-  background-color: #BB3C2B;
-  color : #fff;
+  background-color: #CCb19E;
+  color : #000;
 }
 
 .custom-toast {
@@ -190,9 +192,8 @@ input[name='q']::placeholder {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #323232;
-  color: #fff;
-}
+  background-color:#CCb19E;
+  color: #000;
 
 
 /* Allauth form formatting */
