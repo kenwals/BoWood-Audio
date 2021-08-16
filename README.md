@@ -613,6 +613,8 @@ more detailed instructions are available [here](https://docs.github.com/en/free-
 
 - [How to add favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
+- Pagination in Django [here](https://docs.djangoproject.com/en/3.2/topics/pagination/) and [here](https://www.ordinarycoders.com/blog/article/django-pagination)
+
 - [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
 - [Bootstrap components](https://getbootstrap.com/)
