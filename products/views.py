@@ -15,9 +15,6 @@ def all_products(request):
     """ A view to show all products, including sorting and searching """
 
     products = Product.objects.all()
-    paginator = Paginator(products, 4) # Show 4 products per page.
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
     query = None
     categories = None
     sort = None
@@ -55,9 +52,13 @@ def all_products(request):
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    paginator = Paginator(products, 4) # Show 4 products per page.
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
     context = {
         'products': page_obj,
+        'products_num': paginator.count,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
@@ -95,6 +96,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'reviews': page_obj,
+        'reviews_num': paginator.count,
         'review_form': form,
         'edit_review_form': edit_review_form,
     }
