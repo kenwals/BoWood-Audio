@@ -57,11 +57,10 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'products': products,
+        'products': page_obj,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        'page_obj': page_obj,
     }
 
     return render(request, 'products/products.html', context)
@@ -95,8 +94,7 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        'reviews': reviews,
-        'page_obj': page_obj,
+        'reviews': page_obj,
         'review_form': form,
         'edit_review_form': edit_review_form,
     }
