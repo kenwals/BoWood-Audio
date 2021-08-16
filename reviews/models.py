@@ -8,6 +8,9 @@ from django.dispatch import receiver
 
 class Review(models.Model):
 
+    class Meta:
+        ordering = ['-id']
+
     rating = models.DecimalField(max_digits=6, decimal_places=2,
                                  null=True, blank=True)
     userid = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
