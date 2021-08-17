@@ -538,7 +538,7 @@ No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
 - Checkout :heavy_check_mark:
 
-Pages below have minor errors due to the rendered forms made by crispy forms.
+Pages below have minor errors due to the automatically rendered forms made by crispy forms.
 
 - New product addition
 
