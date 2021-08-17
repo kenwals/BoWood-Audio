@@ -23,20 +23,20 @@
             reviewer: {{ review.userid }}</p>
           {% if user.is_authenticated and user.get_username == review.userid.user.username %}
           <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-            data-bs-target="#editReviewModal">Edit</button>
+            data-bs-target="#editReviewModal{{review.id}}">Edit</button>
           <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
-            data-bs-target="#deleteReviewModal">Delete</button>
+            data-bs-target="#deleteReviewModal{{review.id}}">Delete</button>
           {% endif %}
         </div>
       </div>
       <!-- Edit Review Modal -->
       {% if user.is_authenticated and user.get_username == review.userid.user.username %}
-      <div class="modal fade" id="editReviewModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="editReviewLabel" aria-hidden="true">
+      <div class="modal fade" id="editReviewModal{{review.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="editReviewLabel{{review.id}}" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="editReviewLabel">Edit Review</h5>
+              <h5 class="modal-title" id="editReviewLabel{{review.id}}">Edit Review</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="{% url 'edit_review' review.id %}" method="post">
@@ -55,12 +55,12 @@
         </div>
       </div> <!-- End of Edit Review Modal -->
         <!-- Delete Review Modal -->
-      <div class="modal fade" id="deleteReviewModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="deleteReviewLabel" aria-hidden="true">
+      <div class="modal fade" id="deleteReviewModal{{review.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="deleteReviewLabel{{review.id}}" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="deleteReviewLabel">Caution</h5>
+              <h5 class="modal-title" id="deleteReviewLabel{{review.id}}">Caution</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -116,7 +116,7 @@
   {% endif %}
   <!-- New Review Modal -->
   <div class="modal fade" id="newReviewModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="newReviewLabel" aria-hidden="true">
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <form action="{% url 'add_review' product.id %}" method="post">
