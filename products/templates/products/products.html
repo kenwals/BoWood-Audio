@@ -95,7 +95,7 @@
               {% if request.user.is_superuser %}
               <small class="mb-3">
                 <a class="bowood-text-muted" href="{% url 'edit_product' product.id %}">Edit</a> |
-                <a class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteProductModal">Delete</a>
+                <a class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteProductModal{{product.id}}">Delete</a>
               </small>
               {% endif %}
             </div>
@@ -103,12 +103,12 @@
         </div>
       </div>
       <!-- Delete Product Modal -->
-      <div class="modal fade" id="deleteProductModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="deleteProductLabel" aria-hidden="true">
+      <div class="modal fade" id="deleteProductModal{{product.id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="deleteProductLabel{{product.id}}" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="deleteProductLabel">Caution</h5>
+              <h5 class="modal-title" id="deleteProductLabel{{product.id}}">Caution</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -116,7 +116,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-              <a class="btn btn-danger" href="{% url 'delete_product' product.id %}"">Delete</a>
+              <a class="btn btn-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                               </div>
                             </div>
                           </div>
