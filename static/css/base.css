@@ -278,6 +278,10 @@ color: #17a2b8; /* text-info */
   overflow: hidden;
 }
 
+.btn:hover{
+  color: #CCB19E;
+}
+
 .btn-file input[type="file"] {
   position: absolute;
   top: 0;
