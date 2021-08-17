@@ -444,29 +444,53 @@ wget --spider -r http://bowood-audio.herokuapp.com/ -o wget.log
 ```
 
 - Home / Index :heavy_check_mark:
-This is a simple landing page, on small width screen the navbar is transparent. 
+
+This is a simple landing page, on small width screen the navbar is transparent.
+The Navbar is dyanmic based on user type and device type. The shopping cart also hides zero balances from user.
 
 - What we do :heavy_check_mark:
 
+This page lists out what BoWood Audio does. It is responsive to screen size.
+
 - Contact :heavy_check_mark:
+
+This page contains a contact form. All fields are compulsary, if the message delivery is sucessful or fails the user is notified immediately . 
 
 - Gallery :heavy_check_mark:
 
+This page contains photo images, it is responsive to screen size. The contents can be changed from the Admin portal in the Django backend. 
+
 - Login / Logout :heavy_check_mark:
+
+This login/logout screen works are expected.
 
 - Register new user :heavy_check_mark:
 
+This Registration screen works are expected.
+
 - Profile / My details / Edit my Contact details :heavy_check_mark:
+
+On the page user can update contact details or view previous orders. This screen is only accessible when user is logged in. 
 
 - All products :heavy_check_mark:
 
+This Page listed all the products available, it also can be used to search for products. If a superuser is logged in they can edit or delete products.
+
 - Product details / reviews add/edit/delete :heavy_check_mark:
+
+This Page displays details on each product. The user can submit a review. They can also edit or delete reviews they previous made. The user is prevented from submiting a second new review.
 
 - Shopping bag :heavy_check_mark:
 
+The shopping bag displays the current total and item are display in cards. User can still make change to the bag contents.
+
 - Checkout :heavy_check_mark:
 
+On this screen, the user has to be logged in to complete purchase. 
+
 - New product addition :heavy_check_mark:
+
+Only superusers can access this screen. 
 
 ### Responsiveness Testing
 
