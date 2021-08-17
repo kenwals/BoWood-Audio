@@ -8,74 +8,72 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 
 ## Table of contents
 
-
-- [BoWood Audio](#bowood-audio)
-  * [UX](#ux)
-    + [Scope](#scope)
-    + [Visitor Goals](#visitor-goals)
-    + [Owner Goals](#owner-goals)
-    + [Structure](#structure)
-    + [Skeleton](#skeleton)
-      - [Website page line up](#website-page-line-up)
-    + [Database Schema](#database-schema)
-      - [Relational Database tables schema](#relational-database-tables-schema)
-        * [Order table](#order-table)
-        * [OrderLineItem table](#orderlineitem-table)
-        * [PhotoGallery table](#photogallery-table)
-        * [Contact table](#contact-table)
-        * [Product table](#product-table)
-        * [UserProfile table](#userprofile-table)
-        * [Review table](#review-table)
-      - [Wireframes of pages](#wireframes-of-pages)
-      - [Home](#home)
-      - [What we do](#what-we-do)
-      - [Contact](#contact)
-      - [Gallery](#gallery)
-    + [Surface](#surface)
-      - [Colours](#colours)
-      - [Icons](#icons)
-      - [Images](#images)
-      - [Fonts](#fonts)
-  * [Features](#features)
-    + [Existing Features](#existing-features)
-    + [Features Left to Implement](#features-left-to-implement)
-  * [Technologies Used](#technologies-used)
-    + [Frontend](#frontend)
-      - [Languages](#languages)
-      - [Libraries, Frameworks and Packages include](#libraries--frameworks-and-packages-include)
-      - [Tools](#tools)
-        * [Productivity](#productivity)
-        * [Toolbox](#toolbox)
-  * [Testing](#testing)
-    + [Performance Testing](#performance-testing)
-    + [Known issues](#known-issues)
-      - [Not secure warning / Unsecure connection](#not-secure-warning---unsecure-connection)
-      - [Pep8 e501 errors](#pep8-e501-errors)
-    + [Project barriers and solutions](#project-barriers-and-solutions)
-      - [Time and work life balance](#time-and-work-life-balance)
-    + [Version control](#version-control)
-    + [Functionality Testing](#functionality-testing)
-    + [Responsiveness Testing](#responsiveness-testing)
-    + [CSS3 validator](#css3-validator)
-    + [HTML5 validator](#html5-validator)
-    + [Python validator](#python-validator)
-    + [JavaScript validator](#javascript-validator)
-    + [Usability Testing](#usability-testing)
-    + [Compatibility Testing](#compatibility-testing)
-    + [Testing User Stories](#testing-user-stories)
-      - [Visitor Stories](#visitor-stories)
-      - [Owner Stories](#owner-stories)
-  * [Deployment](#deployment)
-    + [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
-    + [Local Deployment](#local-deployment)
-    + [For VScode and Pipenv](#for-vscode-and-pipenv)
-    + [Heroku](#heroku)
-    + [Contribution and Forking](#contribution-and-forking)
-  * [Credits](#credits)
-    + [Content](#content)
-    + [Resources](#resources)
-    + [Media](#media)
-    + [Acknowledgements](#acknowledgements)
+- [UX](#ux)
+  - [Scope](#scope)
+  - [Visitor Goals](#visitor-goals)
+  - [Owner Goals](#owner-goals)
+  - [Structure](#structure)
+  - [Skeleton](#skeleton)
+    - [Website page line up](#website-page-line-up)
+  - [Database Schema](#database-schema)
+    - [Relational Database tables schema](#relational-database-tables-schema)
+      - [Order table](#order-table)
+      - [OrderLineItem table](#orderlineitem-table)
+      - [PhotoGallery table](#photogallery-table)
+      - [Contact table](#contact-table)
+      - [Product table](#product-table)
+      - [UserProfile table](#userprofile-table)
+      - [Review table](#review-table)
+    - [Wireframes of pages](#wireframes-of-pages)
+    - [Home](#home)
+    - [What we do](#what-we-do)
+    - [Contact](#contact)
+    - [Gallery](#gallery)
+  - [Surface](#surface)
+    - [Colours](#colours)
+    - [Icons](#icons)
+    - [Images](#images)
+    - [Fonts](#fonts)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Features Left to Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+  - [Frontend](#frontend)
+    - [Languages](#languages)
+    - [Libraries, Frameworks and Packages include](#libraries--frameworks-and-packages-include)
+    - [Tools](#tools)
+      - [Productivity](#productivity)
+      - [Toolbox](#toolbox)
+- [Testing](#testing)
+  - [Performance Testing](#performance-testing)
+  - [Known issues](#known-issues)
+    - [Not secure warning / Unsecure connection](#not-secure-warning---unsecure-connection)
+    - [Pep8 e501 errors](#pep8-e501-errors)
+  - [Project barriers and solutions](#project-barriers-and-solutions)
+    - [Time and work life balance](#time-and-work-life-balance)
+  - [Version control](#version-control)
+  - [Functionality Testing](#functionality-testing)
+  - [Responsiveness Testing](#responsiveness-testing)
+  - [CSS3 validator](#css3-validator)
+  - [HTML5 validator](#html5-validator)
+  - [Python validator](#python-validator)
+  - [JavaScript validator](#javascript-validator)
+  - [Usability Testing](#usability-testing)
+  - [Compatibility Testing](#compatibility-testing)
+  - [Testing User Stories](#testing-user-stories)
+    - [Visitor Stories](#visitor-stories)
+    - [Owner Stories](#owner-stories)
+- [Deployment](#deployment)
+  - [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
+  - [Local Deployment](#local-deployment)
+  - [For VScode and Pipenv](#for-vscode-and-pipenv)
+  - [Heroku](#heroku)
+  - [Contribution and Forking](#contribution-and-forking)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Resources](#resources)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 <!-- <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small> -->
 
@@ -313,7 +311,7 @@ back to [contents](#table-of-contents)
 
 - The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/). Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
-- Results for Products and review listing in the shop are paginated. 
+- Results for Products and review listing in the shop are paginated.
 
 ### Features Left to Implement
 
@@ -607,9 +605,10 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 
 1. Go to [the BoWood Audio github page](https://github.com/kenwals/bowood-audio).
 2. Above the list of files, click on the **code** button.
-3. - To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
-   - To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
-   - To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
+3.
+    - To clone the repository using **HTTPS,** under "Clone with HTTPS", click the paste icon.
+    - To clone the repository using an **SSH key**, click Use SSH, then click the paste icon.
+    - To clone a repository using **GitHub CLI,** click Use GitHub CLI, then click the paste icon.
 4. Open your preferred Terminal interface.
 5. Change the current working directory to the location where you want the cloned directory.
 6. Type **git clone**, then paste the URL you copied earlier above. Example below is HTTPS for a Windows PC.
@@ -667,11 +666,11 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 4. Create a [Heroku user account](https://signup.heroku.com/login)
 5. Click on the New button and choose to create a new app.
 6. Input an app name and choose a region that is closest to you.
-7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list i use on my Heroku deployed version. The AWS keys are optional. 
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list i use on my Heroku deployed version. The AWS keys are optional.
 
-![Heroku environmental variable](wireframe/heroku1.png)
+    ![Heroku environmental variable](wireframe/heroku1.png)
 
-![Heroku environmental variable ](wireframe/heroku2.png)
+    ![Heroku environmental variable ](wireframe/heroku2.png)
 
 8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
 
