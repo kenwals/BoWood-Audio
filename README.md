@@ -437,7 +437,14 @@ For version control, I used the UI on VS Code for making git commits or the GitH
 
 ### Functionality Testing
 
+To check is all the links are working , i used the wget spider command below. It found 59 links, none of which are broken. 
+
+```
+wget --spider -r http://bowood-audio.herokuapp.com/ -o wget.log
+```
+
 - Home / Index :heavy_check_mark:
+This is a simple landing page, on small width screen the navbar is transparent. 
 
 - What we do :heavy_check_mark:
 
