@@ -491,8 +491,6 @@ No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
 - What we do :heavy_check_mark:
 
-- Contact :heavy_check_mark:
-
 - Gallery :heavy_check_mark:
 
 - Login / Logout :heavy_check_mark:
@@ -509,7 +507,11 @@ No errors for the pages listed below. Resource: <https://validator.w3.org/>
 
 - Checkout :heavy_check_mark:
 
-- New product addition :heavy_check_mark:
+Pages below have minor errors due to the rendered forms made by crispy forms.
+
+- New product addition
+
+- Contact
 
 ### Python validator
 
