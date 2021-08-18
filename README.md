@@ -47,8 +47,8 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 - [Testing](#testing)
   - [Performance Testing](#performance-testing)
   - [Known issues](#known-issues)
-    - [Not secure warning / Unsecure connection](#not-secure-warning---unsecure-connection)
-    - [Pep8 e501 errors](#pep8-e501-errors)
+    - [Not secure warning or Unsecure connection](#not-secure-warning-or-unsecure-connection)
+    - [Linting errors](#linting-errors)
   - [Project barriers and solutions](#project-barriers-and-solutions)
     - [Time and work life balance](#time-and-work-life-balance)
   - [Version control](#version-control)
@@ -418,7 +418,7 @@ back to [contents](#table-of-contents)
 
 ### Known issues
 
-#### Not secure warning / Unsecure connection
+#### Not secure warning or Unsecure connection
 
 This Web Application has a "not secure" warning displayed on the browser address bar, this prevents me from using certain online tools for responsiveness testing, so I had to manually test these.
 
