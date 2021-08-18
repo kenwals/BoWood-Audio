@@ -1,6 +1,6 @@
 # BoWood Audio
 
-BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the setup of the studio is like and what services are available.
+[BoWood Audio](https://bowood-audio.herokuapp.com/) is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the setup of the studio is like and what services are available.
 
 ![ipad preview](/wireframe/ipad-view.png)
 
