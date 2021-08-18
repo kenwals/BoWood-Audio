@@ -101,7 +101,7 @@ The time allocated to build this project was shorter than previous projects, luc
 
 ### Structure
 
-This full-stack site is put together with HTML, using the bootstrap framework along with some CSS and JavaScript on the frontend.
+This full-stack site is put together with HTML, using the Bootstrap framework along with some CSS and JavaScript on the frontend.
 
 The frontend is integrated into the backend using Python and Django with a PostgreSQL Database.
 
@@ -269,29 +269,29 @@ Colours were sourced from a work in progress design on branding and logo for BoW
 
 Mainly Dark mode using
 
- #323232 - Graphite or Jet
+- #323232 - Graphite or Jet
 
- #BB3C2B - Tall poppy or International Orange Gold
+- #BB3C2B - Tall poppy or International Orange Gold
 
- #F5CA9F  - Manhattan or Peach Crayola
+- #F5CA9F  - Manhattan or Peach Crayola
 
- #CCB19E -  Rodeo Dust or Desert Sand
+- #CCB19E -  Rodeo Dust or Desert Sand
 
 ![colour swatch ](wireframe/colour-swatch.png)
 
 #### Icons
 
-Font Awesome is used for icons
+[Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) is used for icons
 
 #### Images
 
-Images are sourced from Unsplash and the site owner.
+Images are sourced from [Unsplash](https://unsplash.com/) and the site owner.
 
 #### Fonts
 
-The font used is Oswald from Google fonts.
+  ![font sample ](wireframe/font-sample.PNG)
 
-![font sample ](wireframe/font-sample.PNG)
+The font used is Oswald from [Google fonts](https://fonts.google.com/specimen/Oswald?query=oswal).
 
 back to [contents](#table-of-contents)
 
