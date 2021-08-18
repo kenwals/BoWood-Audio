@@ -865,6 +865,11 @@ Product Images that were sourced from Unsplash are credited below:
 10. Bottle opener  [https://unsplash.com/photos/voJB2goG0us](https://unsplash.com/photos/voJB2goG0us)
 11. Tea towel [https://unsplash.com/photos/8yIYQDR8Qr8](https://unsplash.com/photos/8yIYQDR8Qr8)
 12. Tote Bag [https://unsplash.com/photos/nKK32qJheBY](https://unsplash.com/photos/nKK32qJheBY)
+13. Wallet [https://unsplash.com/photos/9Huby3g9fN0](https://unsplash.com/photos/9Huby3g9fN0)
+14. Phone Cover [https://unsplash.com/photos/fCO3tBcnkhg](https://unsplash.com/photos/fCO3tBcnkhg)
+15. Gift Voucher 500 [https://unsplash.com/photos/Y20JJ_ddy9M](https://unsplash.com/photos/Y20JJ_ddy9M)
+16. Gift Voucher 100 [https://unsplash.com/photos/8QrPJ3Kfie4](https://unsplash.com/photos/8QrPJ3Kfie4)
+17. Gift Voucher 250 [https://unsplash.com/photos/MEL-jJnm7RQ](https://unsplash.com/photos/MEL-jJnm7RQ)
 
 ### Acknowledgements
 
