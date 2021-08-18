@@ -1,6 +1,6 @@
 # BoWood Audio
 
-[BoWood Audio](https://bowood-audio.herokuapp.com/) is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the setup of the studio is like and what services are available.
+[BoWood Audio](https://bowood-audio.herokuapp.com/) is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the studio setup is like and what services are available.
 
 ![ipad preview](/wireframe/ipad-view.png)
 
@@ -57,7 +57,7 @@
   - [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
   - [Local Deployment](#local-deployment)
   - [For VScode and Pipenv](#for-vscode-and-pipenv)
-  - [Remote Deployment on Heruko](#remote-deployment-on-heruko)
+  - [Remote Deployment on Heroku](#remote-deployment-on-heroku)
   - [Contribution and Forking](#contribution-and-forking)
 - [Credits](#credits)
   - [Content](#content)
@@ -347,7 +347,7 @@ back to [contents](#table-of-contents)
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/): I used Notion for gathering requirements , content , documenting personal notes, and planning workload.
+- [Notion](https://www.notion.so/): I used Notion for gathering requirements, content, documenting personal notes, and planning workload.
 - Pomodoro timer: [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner: [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
@@ -435,7 +435,7 @@ back to [contents](#table-of-contents)
 
 #### 500 server error
 
-The contact page was giving a 500 server error at one point when the user was attempting to send messages. It turns out, I had reset my gmail password recently and I didn't realise that this also makes all my current SMTP passcodes invalid(they actually disappeared from my gmail settings). So the simple fix was to create and replace the passcode and make sure I remember what to do next time i change my gmail password.
+The contact page was giving a 500 server error at one point when the user was attempting to send messages. It turns out, I had reset my Gmail password recently and I didn't realise that this also makes all my current SMTP passcodes invalid(they disappeared from my Gmail settings). So the simple fix was to create and replace the passcode and make sure I remember what to do next time I change my Gmail password.
 
 #### USD to EURO conversion
 
@@ -449,7 +449,7 @@ This Web Application has a "not secure" warning displayed on the browser address
 
 #### Linting errors
 
-As Django autogenerates html and python, i had to ignore some linting issues. For HTML , w3 valiation errors from crispy forms happen on the contact page and the new product page. The Python ones are coming such things as migration scripts and webhooks. I believe these errors can safely be ignored.
+As Django autogenerates HTML and Python, I had to ignore some linting issues. For HTML, W3 validation errors from crispy forms happen on the contact page and the new product page. The Python ones are coming such things as migration scripts and webhooks. I believe these errors can safely be ignored.
 
 ### Project barriers and solutions
 
@@ -496,7 +496,7 @@ This Registration screen works are expected.
 
 - Profile / My details / Edit my Contact details :heavy_check_mark:
 
-On the page, the user can update contact details or view previous orders. This screen is only accessible when user is logged in. 
+On the page, the user can update contact details or view previous orders. This screen is only accessible when a user is logged in.
 
 - All products :heavy_check_mark:
 
@@ -615,31 +615,31 @@ Any issues found were resolved.
 
     ![visitor story 2](wireframe/visitor-story2.png)
 
-    Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access to.
+    Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access.
 
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 
     ![visitor story 3](wireframe/visitor-story3.png)
 
-    The Contact page has a form which the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).
+    The Contact page has a form that the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).
 
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 
     ![visitor story 4](wireframe/visitor-story4.png)
 
-    Visitor can browse the products selection on the Shop/All items page.
+    Visitors can browse the products selection on the Shop/All items page.
 
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
 
     ![visitor story 5](wireframe/visitor-story5.png)
 
-    When the visitor click on a product from the products page , they are taken to a page giving more details on the product.
+    When the visitor clicks on a product from the products page, they are taken to a page giving more details on the product.
 
 6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before I buy or share my opinion with other visitors.
 
     ![visitor story 6](wireframe/visitor-story6.png)
 
-    Reviews are visible on the Product detail page, visitor can contribute when logged in.
+    Reviews are visible on the Product detail page, visitors can contribute when logged in.
 
 #### Owner Stories
 
@@ -647,7 +647,7 @@ Any issues found were resolved.
 
     ![owner story 1](wireframe/owner-story1.png)
 
-    Homepage is simple and responsive to screen size, on smaller screens the navbar is transparent initially.
+    The homepage is simple and responsive to screen size, on smaller screens, the navbar is transparent initially.
 
 2. As the owner of this site, I want to be able to have an online store so I can sell merchandise and gift vouchers.
 
@@ -657,7 +657,7 @@ Any issues found were resolved.
 
 3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
 
-    The emails from this web app are setup to be sent by gmail, so the site owner has full access to the email history.
+    The emails from this web app are set up to be sent by Gmail, so the site owner has full access to the email history.
 
 4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
@@ -673,7 +673,7 @@ back to [contents](#table-of-contents)
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This Production and Development versions of this project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Local Environmental variables file I used on the development version with keys masked. You will need to replace it with your own.
+**Please note** The Production and Development versions of this project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Local Environmental variables file I used on the development version with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -694,11 +694,11 @@ You will need :
 
 - A [Stripe](https://stripe.com/ie) account.
 
-- An email address STMP server password or passkey, I recommend using gmail.
+- An email address STMP server password or passkey, I recommend using Gmail.
 
-- A Django Secret Key. You can generate your own unique one [here](https://djecrety.ir/)
+- A Django Secret Key. You can generate your unique one [here](https://djecrety.ir/)
 
-- An [Heruko](https://www.heroku.com/) account with a PostGresSQL app installed.
+- An [Heroku](https://www.heroku.com/) account with a PostGresSQL app installed.
 
 - A [GitHub](https://github.com/) account.
 
@@ -755,7 +755,7 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
     python manage.py runserver
     ```
 
-### Remote Deployment on Heruko
+### Remote Deployment on Heroku
 
 [Heroku](https://www.heroku.com/) is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
 
@@ -771,14 +771,14 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
 4. Create a [Heroku user account](https://signup.heroku.com/login)
 5. Click on the New button and choose to create a new app.
 6. Input an app name and choose a region that is closest to you.
-7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list I use on my Heroku deployed version. The AWS keys are optional.
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars, Below is the list I use on my Heroku deployed version. The AWS keys are optional.
 
     ![Heroku environmental variable](wireframe/heroku1.png)
 
     ![Heroku environmental variable ](wireframe/heroku2.png)
 
 8. Now you can deploy, the simplest way is to deploy from GitHub
-    - Click on the Deploy tab, Under Deployment method click on GitHub.
+    - Click on the Deploy tab, Under the Deployment method click on GitHub.
     - A search window will prompt you to connect to the appropriate repository.
     - You can then choose to do a manual or automatic deployment. I recommend Automatic, that way whenever a change is pushed to your main branch on your GitHub repository the Heroku application is re-deployed automatically.
 
