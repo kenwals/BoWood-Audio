@@ -788,6 +788,8 @@ back to [contents](#table-of-contents)
 
 ### Resources
 
+- [Django documentation](https://www.djangoproject.com/)
+
 - [Trick used for navbar icon](https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color)
 
 - Codemy.com youtube videos on Django contact page setup [here](https://www.youtube.com/watch?v=xNqnHmXIuzU) and
