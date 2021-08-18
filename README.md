@@ -417,6 +417,16 @@ back to [contents](#table-of-contents)
 
 - New product addition :heavy_check_mark:
 
+### Bugs encountered on the way
+
+#### 500 server error
+
+The contact page was giving a 500 server error at one point when the user was attempting to send messages. It turns out, I had reset my gmail password recently and I didn't realise that this also makes all my current SMTP passcodes invalid(they actually disappeared from my gmail settings). So the simple fix was to create and replace the passcode and make sure I remember what to do next time i change my gmail password.
+
+#### USD to EURO conversion
+
+I got a bit carried away at one point. I did a "find and replace" command on all $ instances and changed them to €. Big mistake. As it broke a few jQuery commands. Another lesson was learned!.
+
 ### Known issues
 
 #### Not secure warning or Unsecure connection
