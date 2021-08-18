@@ -395,27 +395,51 @@ back to [contents](#table-of-contents)
 
 - Home / Index :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse1.png)
+
 - What we do :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse2.png)
 
 - Contact :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse3.png)
+
 - Gallery :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse4.png)
 
 - Login / Logout :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse5.png)
+
 - Register new user :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse6.png)
 
 - Profile / My details / Edit my Contact details :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse7.png)
+
 - All products :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse8.png)
 
 - Product details / reviews add/edit/delete :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse9.png)
+
 - Shopping bag :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse10.png)
 
 - Checkout :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse11.png)
+
 - New product addition :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse12.png)
 
 ### Bugs encountered on the way
 
