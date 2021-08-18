@@ -316,7 +316,8 @@ back to [contents](#table-of-contents)
 ### Features Left to Implement
 
 - Gift Voucher journal handling.
-- Official logo and fresh showcase work , still in progress.
+
+- Official logo and fresh showcase work, still in progress.
 
 back to [contents](#table-of-contents)
 
@@ -356,7 +357,7 @@ back to [contents](#table-of-contents)
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/): I used Notion for documenting personal notes, and planning work.
+- [Notion](https://www.notion.so/): I used Notion for gathering requirements , content , documenting personal notes, and planning workload.
 - Pomodoro timer: [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner: [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
@@ -378,7 +379,7 @@ back to [contents](#table-of-contents)
 - px to rem convertor: [nekoCalc](https://nekocalc.com/px-to-rem-converter)
 - JavaScript linter: [jshint](https://jshint.com/)
 - Python linter:  [Pep8 online](http://pep8online.com/)
-- Markdown linter: markdownlint extension on VS Code.
+- Markdown linter: Markdownlint extension on VS Code.
 - Colour names: [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
 - Colour swatches: [Coolors](https://coolors.co/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
