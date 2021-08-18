@@ -649,7 +649,7 @@ back to [contents](#table-of-contents)
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This Production version of the project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
+**Please note** This Production and Development versions of this project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Local Environmental variables file I used on the development version with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -666,13 +666,13 @@ DEVELOPMENT=True
 
 You will need :
 
-- [Python](https://www.python.org/) installed
+- [Python](https://www.python.org/) installed.
 
-- A [Stripe](https://stripe.com/ie) account
+- A [Stripe](https://stripe.com/ie) account.
 
-- An email address STMP server password or passkey.
+- An email address STMP server password or passkey, I recommend using gmail.
 
-- A Django Secret Key. Get one [here](https://djecrety.ir/)
+- A Django Secret Key. You can generate your own unique one [here](https://djecrety.ir/)
 
 - An [Heruko](https://www.heroku.com/) account with a PostGresSQL app installed.
 
@@ -731,9 +731,9 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
     python manage.py runserver
     ```
 
-### Heroku
+### Remote Deployment on Heruko
 
-Heroku is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
+[Heroku](https://www.heroku.com/) is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
 
 1. Before you set up Heroku, you first need to create some files that are necessary for it to run on the Heroku server.
 2. Open a terminal window in your IDE on the root folder of the project, run the command below, this will create a new file called procfile.
@@ -753,7 +753,10 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 
     ![Heroku environmental variable ](wireframe/heroku2.png)
 
-8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
+8. Now you can deploy, the simplest way is to deploy from GitHub
+    - Click on the Deploy tab, Under Deployment method click on GitHub.
+    - A search window will prompt you to connect to the appropriate repository.
+    - You can then choose to do a manual or automatic deployment. I recommend Automatic, that way whenever a change is pushed to your main branch on your GitHub repository the Heroku application is re-deployed automatically.
 
 ### Contribution and Forking
 
