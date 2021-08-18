@@ -465,7 +465,7 @@ For version control, I used the UI on VS Code for making git commits or the GitH
 
 To check if all the links are working, I used the wget spider command below. It found 59 links, none of which are broken.
 
-```
+```bash
 wget --spider -r http://bowood-audio.herokuapp.com/ -o wget.log
 ```
 
@@ -484,7 +484,7 @@ This page contains a contact form. All fields are compulsory, if the message del
 
 - Gallery :heavy_check_mark:
 
-This page contains photo images, it is responsive to screen size. The contents can be changed from the Admin portal in the Django backend. 
+This page contains photo images, it is responsive to screen size. The contents can be changed from the Admin portal in the Django backend.
 
 - Login / Logout :heavy_check_mark:
 
@@ -516,7 +516,7 @@ On this screen, the user has to be logged in to complete the purchase.
 
 - New product addition :heavy_check_mark:
 
-Only superusers can access this screen. 
+Only superusers can access this screen.
 
 ### Responsiveness Testing
 
