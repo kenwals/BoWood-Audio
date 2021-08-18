@@ -37,8 +37,6 @@ def contact(request):
                 message_email,
                 ['kenwals@gmail.com'],
             )
-            messages.info(request, f'Thank you {message_name},'
-                          ' Your message has been sent now!')
             return render(request, 'home/contact.html', {
                 'message_name': message_name})
         else:

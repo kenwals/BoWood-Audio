@@ -23,7 +23,7 @@ def add_review(request, product_id):
             review_form.userid = user
             review_form.product = product
             review_form.save()
-            messages.success(request, "Your review has been added now")
+            messages.info(request, "Your review has been added now")
         else:
             messages.error(request, 'Failed to add review, \
                 please ensure form is valid.')
@@ -38,7 +38,7 @@ def edit_review(request, review_id):
         form = ReviewForm(request.POST, instance=review)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your review has been edited now")
+            messages.info(request, "Your review has been edited now")
         else:
             messages.error(request, 'Failed to edit review, \
                 please ensure form is valid.')
@@ -50,6 +50,6 @@ def edit_review(request, review_id):
 def delete_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     review.delete()
-    messages.success(request, "Your review has been deleted now")
+    messages.info(request, "Your review has been deleted now")
 
     return redirect(reverse('product_detail', args=(review.product.id,)))
