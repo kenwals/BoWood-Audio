@@ -257,7 +257,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 Colours were sourced from a work in progress design on branding and logo for BoWood Audio.
 
-Mainly Dark mode using
+Colours are mainly Dark mode using:
 
 - #323232 - Graphite or Jet
 
@@ -295,7 +295,7 @@ back to [contents](#table-of-contents)
 
 - Messages inputted on the Contact form are emailed to the site owner.
 
-- Responsiveness display on all screen sizes.
+- Responsiveness display is experienced on all screen sizes.
 
 - Toasts feedback messages to the user.
 
@@ -313,7 +313,7 @@ back to [contents](#table-of-contents)
 
 - Gift Voucher journal handling.
 
-- Official logo and fresh showcase work, still in progress.
+- Official logo and fresh showcase work (still in progress).
 
 back to [contents](#table-of-contents)
 
@@ -359,7 +359,7 @@ back to [contents](#table-of-contents)
 
 ##### Toolbox
 
-- JSfiddle: I used this online sandbox to build and play code before i adding to the project.
+- JSfiddle: I used this online sandbox to build and play code before adding it to the project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
 - DB Schema diagram: [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
@@ -530,6 +530,7 @@ No issues were found on the screen sizes below.
 | iPhone 5/SE DevTools emulation (Screen width 326px) xs | Pass |
 | Android Mobile phone (Screen width 412px) xs | Pass |
 | Android Tablet (Screen width 600px) sm       | Pass |
+| iPad Tablet DevTools emulation (Screen width 768px) md| Pass |
 | Windows laptop (Screen width 2560px) xxl        |   Pass |
 
 ### CSS3 validator
@@ -828,6 +829,8 @@ back to [contents](#table-of-contents)
 - [How to add a favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
 - Pagination in Django [here](https://docs.djangoproject.com/en/3.2/topics/pagination/) and [here](https://www.ordinarycoders.com/blog/article/django-pagination)
+
+- [Djangos built-in views for error messages](https://docs.djangoproject.com/en/3.2/ref/views/)
 
 - [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
