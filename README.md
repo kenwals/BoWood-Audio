@@ -295,6 +295,10 @@ back to [contents](#table-of-contents)
 
 - Messages inputted on the Contact form are emailed to the site owner.
 
+- Responsiveness display on all screen sizes.
+
+- Toasts feadback messages to the user.
+
 - The Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
 - Visitors have full CRUD access to the product reviews they submit.
@@ -302,6 +306,8 @@ back to [contents](#table-of-contents)
 - The Product review ratings are updated automatically by [Django signals](https://docs.djangoproject.com/en/3.2/topics/signals/). Each change on the reviews model table triggers the particular product's rating to be re-calculated.
 
 - Results for Products and review listing in the shop are paginated.
+
+- The Shopping cart icon on navbar only displays outstanding balances above zero.
 
 ### Features Left to Implement
 
