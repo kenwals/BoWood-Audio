@@ -297,7 +297,7 @@ back to [contents](#table-of-contents)
 
 - Responsiveness display on all screen sizes.
 
-- Toasts feadback messages to the user.
+- Toasts feedback messages to the user.
 
 - The Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
@@ -307,7 +307,7 @@ back to [contents](#table-of-contents)
 
 - Results for Products and review listing in the shop are paginated.
 
-- The Shopping cart icon on navbar only displays outstanding balances above zero.
+- The Shopping cart icon on the navbar only displays outstanding balances above zero.
 
 ### Features Left to Implement
 
