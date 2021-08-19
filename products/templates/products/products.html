@@ -36,7 +36,7 @@
       {% if products_num > 0 %}
       {{ products_num }} results{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
       {% else %}
-      No results found , <a href="{% url 'products' %}?category=mechandise,voucher">click here to view all Items</a>
+      No results found, <a href="{% url 'products' %}?category=mechandise,voucher"> view all </a>
       {% endif %}
     </div>
     <div class="col-6 d-flex justify-content-end ">

@@ -257,7 +257,7 @@ The page content is dynamic and composed of Jinja templates which are put togeth
 
 Colours were sourced from a work in progress design on branding and logo for BoWood Audio.
 
-Mainly Dark mode using
+Colours are mainly Dark mode using:
 
 - #323232 - Graphite or Jet
 
@@ -295,6 +295,10 @@ back to [contents](#table-of-contents)
 
 - Messages inputted on the Contact form are emailed to the site owner.
 
+- Responsiveness display is experienced on all screen sizes.
+
+- Toasts feedback messages to the user.
+
 - The Photo gallery is connected to a database table, so it can be updated by the site owner on an admin portal.
 
 - Visitors have full CRUD access to the product reviews they submit.
@@ -303,11 +307,13 @@ back to [contents](#table-of-contents)
 
 - Results for Products and review listing in the shop are paginated.
 
+- The Shopping cart icon on the navbar only displays outstanding balances above zero.
+
 ### Features Left to Implement
 
 - Gift Voucher journal handling.
 
-- Official logo and fresh showcase work, still in progress.
+- Official logo and fresh showcase work (still in progress).
 
 back to [contents](#table-of-contents)
 
@@ -353,7 +359,7 @@ back to [contents](#table-of-contents)
 
 ##### Toolbox
 
-- JSfiddle: I used this online sandbox to build and play code before i adding to the project.
+- JSfiddle: I used this online sandbox to build and play code before adding it to the project.
 - Wireframe: [Balsamiq](https://balsamiq.com/)
 - DB Schema diagram: [Drawsql.app](https://drawsql.app/code-institute-3/diagrams/ms04#)
 - IDE: [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
@@ -524,6 +530,7 @@ No issues were found on the screen sizes below.
 | iPhone 5/SE DevTools emulation (Screen width 326px) xs | Pass |
 | Android Mobile phone (Screen width 412px) xs | Pass |
 | Android Tablet (Screen width 600px) sm       | Pass |
+| iPad Tablet DevTools emulation (Screen width 768px) md| Pass |
 | Windows laptop (Screen width 2560px) xxl        |   Pass |
 
 ### CSS3 validator
@@ -605,37 +612,37 @@ Any issues found were resolved.
 
     ![visitor story 1](wireframe/visitor-story1.png)
 
-    BoWood Audios list of services and facilities are listed on the What We Do page.
+    *BoWood Audios list of services and facilities are listed on the What We Do page.*
 
 2. As a visitor to this site, I want to see pictures of the studio, so I know what to expect.
 
     ![visitor story 2](wireframe/visitor-story2.png)
 
-    Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access.
+    *Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access.*
 
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 
     ![visitor story 3](wireframe/visitor-story3.png)
 
-    The Contact page has a form that the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).
+    *The Contact page has a form that the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).*
 
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 
     ![visitor story 4](wireframe/visitor-story4.png)
 
-    Visitors can browse the products selection on the Shop/All items page.
+    *Visitors can browse the products selection on the Shop/All items page.*
 
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
 
     ![visitor story 5](wireframe/visitor-story5.png)
 
-    When the visitor clicks on a product from the products page, they are taken to a page giving more details on the product.
+    *When the visitor clicks on a product from the products page, they are taken to a page giving more details on the product.*
 
 6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before I buy or share my opinion with other visitors.
 
     ![visitor story 6](wireframe/visitor-story6.png)
 
-    Reviews are visible on the Product detail page, the visitors can contribute when logged in.
+    *Reviews are visible on the Product detail page, the visitors can contribute when logged in.*
 
 #### Owner Stories
 
@@ -643,23 +650,23 @@ Any issues found were resolved.
 
     ![owner story 1](wireframe/owner-story1.png)
 
-    The homepage is simple and responsive to screen size, on smaller screens, the navbar is transparent initially.
+    *The homepage is simple and responsive to screen size, on smaller screens, the navbar is transparent initially.*
 
 2. As the owner of this site, I want to be able to have an online store so I can sell merchandise and gift vouchers.
 
     ![owner story 2](wireframe/visitor-story4.png)
 
-    The shop has various products and gift vouchers on sale.
+    *The shop has various products and gift vouchers on sale.*
 
 3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
 
-    The emails from this web app are set up to be sent by Gmail, so the site owner has full access to the email history.
+    *The emails from this web app are set up to be sent by Gmail, so the site owner has full access to the email history.*
 
 4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
     ![owner story 4](wireframe/owner-story4.png)
 
-    Visitors can view upcoming work on the BoWood Audios Youtube or Soundcloud pages.
+    *Visitors can view upcoming work on the BoWood Audios Youtube or Soundcloud pages.*
 
 back to [contents](#table-of-contents)
 
@@ -822,6 +829,8 @@ back to [contents](#table-of-contents)
 - [How to add a favicon to Django in 4 steps](https://simpleit.rocks/python/django/django-favicon-adding/)
 
 - Pagination in Django [here](https://docs.djangoproject.com/en/3.2/topics/pagination/) and [here](https://www.ordinarycoders.com/blog/article/django-pagination)
+
+- [Djangos built-in views for error messages](https://docs.djangoproject.com/en/3.2/ref/views/)
 
 - [Crash course in Pipenv](https://www.youtube.com/watch?v=6Qmnh5C4Pmo)
 
