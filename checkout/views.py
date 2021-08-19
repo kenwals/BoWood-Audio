@@ -34,6 +34,7 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
+
 @login_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY

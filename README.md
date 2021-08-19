@@ -1,6 +1,6 @@
 # BoWood Audio
 
-BoWood Audio is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the setup of the studio is like and what services are available.
+[BoWood Audio](https://bowood-audio.herokuapp.com/) is a home recording studio that provides a wide range of audio and program editing services. This website's primary intention is to display to the visitor what the studio setup is like and what services are available.
 
 ![ipad preview](/wireframe/ipad-view.png)
 
@@ -17,18 +17,7 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
     - [Website page line up](#website-page-line-up)
   - [Database Schema](#database-schema)
     - [Relational Database tables schema](#relational-database-tables-schema)
-      - [Order table](#order-table)
-      - [OrderLineItem table](#orderlineitem-table)
-      - [PhotoGallery table](#photogallery-table)
-      - [Contact table](#contact-table)
-      - [Product table](#product-table)
-      - [UserProfile table](#userprofile-table)
-      - [Review table](#review-table)
     - [Wireframes of pages](#wireframes-of-pages)
-    - [Home](#home)
-    - [What we do](#what-we-do)
-    - [Contact](#contact)
-    - [Gallery](#gallery)
   - [Surface](#surface)
     - [Colours](#colours)
     - [Icons](#icons)
@@ -40,12 +29,13 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
 - [Technologies Used](#technologies-used)
   - [Frontend](#frontend)
     - [Languages](#languages)
-    - [Libraries, Frameworks and Packages include](#libraries--frameworks-and-packages-include)
+    - [Libraries, Frameworks and Packages include](#libraries-frameworks-and-packages-include)
     - [Tools](#tools)
       - [Productivity](#productivity)
       - [Toolbox](#toolbox)
 - [Testing](#testing)
   - [Performance Testing](#performance-testing)
+  - [Bugs encountered on the way](#bugs-encountered-on-the-way)
   - [Known issues](#known-issues)
     - [Not secure warning or Unsecure connection](#not-secure-warning-or-unsecure-connection)
     - [Linting errors](#linting-errors)
@@ -67,7 +57,7 @@ BoWood Audio is a home recording studio that provides a wide range of audio and 
   - [Pre-Requisites for Deployment](#pre-requisites-for-deployment)
   - [Local Deployment](#local-deployment)
   - [For VScode and Pipenv](#for-vscode-and-pipenv)
-  - [Heroku](#heroku)
+  - [Remote Deployment on Heroku](#remote-deployment-on-heroku)
   - [Contribution and Forking](#contribution-and-forking)
 - [Credits](#credits)
   - [Content](#content)
@@ -101,7 +91,7 @@ The time allocated to build this project was shorter than previous projects, luc
 
 ### Structure
 
-This full-stack site is put together with HTML, using the bootstrap framework along with some CSS and JavaScript on the frontend.
+This full-stack site is put together with HTML, using the Bootstrap framework along with some CSS and JavaScript on the frontend.
 
 The frontend is integrated into the backend using Python and Django with a PostgreSQL Database.
 
@@ -269,29 +259,29 @@ Colours were sourced from a work in progress design on branding and logo for BoW
 
 Mainly Dark mode using
 
- #323232 - Graphite or Jet
+- #323232 - Graphite or Jet
 
- #BB3C2B - Tall poppy or International Orange Gold
+- #BB3C2B - Tall poppy or International Orange Gold
 
- #F5CA9F  - Manhattan or Peach Crayola
+- #F5CA9F  - Manhattan or Peach Crayola
 
- #CCB19E -  Rodeo Dust or Desert Sand
+- #CCB19E -  Rodeo Dust or Desert Sand
 
 ![colour swatch ](wireframe/colour-swatch.png)
 
 #### Icons
 
-Font Awesome is used for icons
+[Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=1) is used for icons
 
 #### Images
 
-Images are sourced from Unsplash and the site owner.
+Images are sourced from [Unsplash](https://unsplash.com/) and the site owner.
 
 #### Fonts
 
-The font used is Oswald from Google fonts.
+  ![font sample ](wireframe/font-sample.PNG)
 
-![font sample ](wireframe/font-sample.PNG)
+The font used is Oswald from [Google fonts](https://fonts.google.com/specimen/Oswald?query=oswal).
 
 back to [contents](#table-of-contents)
 
@@ -316,7 +306,8 @@ back to [contents](#table-of-contents)
 ### Features Left to Implement
 
 - Gift Voucher journal handling.
-- Official logo and fresh showcase work , still in progress.
+
+- Official logo and fresh showcase work, still in progress.
 
 back to [contents](#table-of-contents)
 
@@ -356,7 +347,7 @@ back to [contents](#table-of-contents)
 
 ##### Productivity
 
-- [Notion](https://www.notion.so/): I used Notion for documenting personal notes, and planning work.
+- [Notion](https://www.notion.so/): I used Notion for gathering requirements, content, documenting personal notes, and planning workload.
 - Pomodoro timer: [Tomato Clock](https://chrome.google.com/webstore/detail/tomato-clock/enemipdanmallpjakiehedcgjmibjihj) is perfect for keeping my work progressing while also making me take breaks!.
 - Kanban planner: [Github projects](https://github.com/kenwals/BoWood-Audio/projects/1).
 
@@ -378,7 +369,7 @@ back to [contents](#table-of-contents)
 - px to rem convertor: [nekoCalc](https://nekocalc.com/px-to-rem-converter)
 - JavaScript linter: [jshint](https://jshint.com/)
 - Python linter:  [Pep8 online](http://pep8online.com/)
-- Markdown linter: markdownlint extension on VS Code.
+- Markdown linter: Markdownlint extension on VS Code.
 - Colour names: [Name that color](https://chir.ag/projects/name-that-color/#6195ED)
 - Colour swatches: [Coolors](https://coolors.co/)
 - [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?hl=en)
@@ -394,27 +385,57 @@ back to [contents](#table-of-contents)
 
 - Home / Index :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse1.png)
+
 - What we do :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse2.png)
 
 - Contact :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse3.png)
+
 - Gallery :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse4.png)
 
 - Login / Logout :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse5.png)
+
 - Register new user :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse6.png)
 
 - Profile / My details / Edit my Contact details :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse7.png)
+
 - All products :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse8.png)
 
 - Product details / reviews add/edit/delete :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse9.png)
+
 - Shopping bag :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse10.png)
 
 - Checkout :heavy_check_mark:
 
+    ![lighthouse audit results passed](wireframe/lighthouse11.png)
+
 - New product addition :heavy_check_mark:
+
+    ![lighthouse audit results passed](wireframe/lighthouse12.png)
+
+### Bugs encountered on the way
+
+#### 500 server error
+
+The contact page was giving a 500 server error at one point when the user was attempting to send messages. It turns out, I had reset my Gmail password recently and I didn't realise that this also makes all my current SMTP passcodes invalid(they disappeared from my Gmail settings). So the simple fix was to create and replace the passcode and make sure I remember what to do next time I change my Gmail password.
 
 ### Known issues
 
@@ -424,7 +445,7 @@ This Web Application has a "not secure" warning displayed on the browser address
 
 #### Linting errors
 
-As Django autogenerates html and python, i had to ignore some linting issues. For HTML , w3 valiation errors from crispy forms happen on the contact page and the new product page. The Python ones are coming such things as migration scripts and webhooks. I believe these errors can safely be ignored.
+As Django autogenerates HTML and Python, I had to ignore some linting issues. For HTML, W3 validation errors from crispy forms happen on the contact page and the new product page. The Python ones are coming such things as migration scripts and webhooks. I believe these errors can safely be ignored.
 
 ### Project barriers and solutions
 
@@ -440,7 +461,7 @@ For version control, I used the UI on VS Code for making git commits or the GitH
 
 To check if all the links are working, I used the wget spider command below. It found 59 links, none of which are broken.
 
-```
+```bash
 wget --spider -r http://bowood-audio.herokuapp.com/ -o wget.log
 ```
 
@@ -459,7 +480,7 @@ This page contains a contact form. All fields are compulsory, if the message del
 
 - Gallery :heavy_check_mark:
 
-This page contains photo images, it is responsive to screen size. The contents can be changed from the Admin portal in the Django backend. 
+This page contains photo images, it is responsive to screen size. The contents can be changed from the Admin portal in the Django backend.
 
 - Login / Logout :heavy_check_mark:
 
@@ -471,7 +492,7 @@ This Registration screen works are expected.
 
 - Profile / My details / Edit my Contact details :heavy_check_mark:
 
-On the page, the user can update contact details or view previous orders. This screen is only accessible when user is logged in. 
+On the page, the user can update contact details or view previous orders. This screen is only accessible when a user is logged in.
 
 - All products :heavy_check_mark:
 
@@ -483,15 +504,15 @@ This Page displays details on each product. The user can submit a review. They c
 
 - Shopping bag :heavy_check_mark:
 
-The shopping bag displays the current total and items are display in cards. Users can still make a change to the bag contents.
+The shopping bag displays the current total and items are displayed in cards. Users can still make a change to the bag contents.
 
 - Checkout :heavy_check_mark:
 
-On this screen, the user has to be logged in to complete the purchase.
+On this screen, the user has to be logged in to complete the purchase. Credit Card validation is working as expected.
 
 - New product addition :heavy_check_mark:
 
-Only superusers can access this screen. 
+Only superusers can access this screen.
 
 ### Responsiveness Testing
 
@@ -590,31 +611,31 @@ Any issues found were resolved.
 
     ![visitor story 2](wireframe/visitor-story2.png)
 
-    Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access to.
+    Photos of the Studio are shown on the Gallery page. This page is also updatable from the admin section which the Owner has access.
 
 3. As a visitor to this site, I want to be able to contact the studio, so that I can make queries or request a booking.
 
     ![visitor story 3](wireframe/visitor-story3.png)
 
-    The Contact page has a form which the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).
+    The Contact page has a form that the visitor can fill in and send. The message can be sent to a list of email addresses(currently only one).
 
 4. As a visitor to this site, I want to be able to view the range of products that are on sale, so that I can make an online purchase.
 
     ![visitor story 4](wireframe/visitor-story4.png)
 
-    Visitor can browse the products selection on the Shop/All items page.
+    Visitors can browse the products selection on the Shop/All items page.
 
 5. As a visitor to this site, I want to be able to view individual product details, so that I check product details before deciding to purchase.
 
     ![visitor story 5](wireframe/visitor-story5.png)
 
-    When the visitor click on a product from the products page , they are taken to a page giving more details on the product.
+    When the visitor clicks on a product from the products page, they are taken to a page giving more details on the product.
 
 6. As a visitor to this site, I want to be able to see and post reviews of the products on sale, so that I get a second opinion before I buy or share my opinion with other visitors.
 
     ![visitor story 6](wireframe/visitor-story6.png)
 
-    Reviews are visible on the Product detail page, visitor can contribute when logged in.
+    Reviews are visible on the Product detail page, the visitors can contribute when logged in.
 
 #### Owner Stories
 
@@ -622,7 +643,7 @@ Any issues found were resolved.
 
     ![owner story 1](wireframe/owner-story1.png)
 
-    Homepage is simple and responsive to screen size, on smaller screens the navbar is transparent initially.
+    The homepage is simple and responsive to screen size, on smaller screens, the navbar is transparent initially.
 
 2. As the owner of this site, I want to be able to have an online store so I can sell merchandise and gift vouchers.
 
@@ -632,7 +653,7 @@ Any issues found were resolved.
 
 3. As the owner of this site, I want a receipt/proof of purchase emailed to me and available to myself.
 
-    The emails from this web app are setup to be sent by gmail, so the site owner has full access to the email history.
+    The emails from this web app are set up to be sent by Gmail, so the site owner has full access to the email history.
 
 4. As the owner of this site, I want to showcase some of my work, so the user gets an idea of my skills and talent.
 
@@ -648,7 +669,7 @@ back to [contents](#table-of-contents)
 
 I developed this application in VScode, While developing this application I used a virtual environment called [pipenv](https://pipenv.pypa.io/en/latest/). I would recommend you do the same. This repo includes the pipenv compatible dependency setup files, the only thing you need to configure is the environmental variable file (filename: ".env").
 
-**Please note** This Production version of the project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Environmental variables file I used with keys masked. You will need to replace it with your own.
+**Please note** The Production and Development versions of this project contains several Environmental variable keys that will not work outside of this project without you refactoring in your keys. Here is a sample of the Local Environmental variables file I used on the development version with keys masked. You will need to replace it with your own.
 
 ```bash
 
@@ -665,15 +686,15 @@ DEVELOPMENT=True
 
 You will need :
 
-- [Python](https://www.python.org/) installed
+- [Python](https://www.python.org/) installed.
 
-- A [Stripe](https://stripe.com/ie) account
+- A [Stripe](https://stripe.com/ie) account.
 
-- An email address STMP server password or passkey.
+- An email address STMP server password or passkey, I recommend using Gmail.
 
-- A Django Secret Key. Get one [here](https://djecrety.ir/)
+- A Django Secret Key. You can generate your unique one [here](https://djecrety.ir/)
 
-- An [Heruko](https://www.heroku.com/) account with a PostGresSQL app installed.
+- An [Heroku](https://www.heroku.com/) account with a PostGresSQL app installed.
 
 - A [GitHub](https://github.com/) account.
 
@@ -730,9 +751,9 @@ To deploy locally on your preferred Desktop IDE, you can clone the repository to
     python manage.py runserver
     ```
 
-### Heroku
+### Remote Deployment on Heroku
 
-Heroku is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
+[Heroku](https://www.heroku.com/) is a cloud platform that can hosts dynamic web applications. Once you have the completed site in your repository, you can deploy it to Heroku by the following steps.
 
 1. Before you set up Heroku, you first need to create some files that are necessary for it to run on the Heroku server.
 2. Open a terminal window in your IDE on the root folder of the project, run the command below, this will create a new file called procfile.
@@ -746,13 +767,16 @@ Heroku is a cloud platform that can hosts dynamic web applications. Once you hav
 4. Create a [Heroku user account](https://signup.heroku.com/login)
 5. Click on the New button and choose to create a new app.
 6. Input an app name and choose a region that is closest to you.
-7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars , Below is the list I use on my Heroku deployed version. The AWS keys are optional.
+7. To input the necessary environmental variables, simply go to the Settings tab, and under Config Vars, Click on Reveal Config Vars, Below is the list I use on my Heroku deployed version. The AWS keys are optional.
 
     ![Heroku environmental variable](wireframe/heroku1.png)
 
     ![Heroku environmental variable ](wireframe/heroku2.png)
 
-8. Now you can deploy, the simplest way is to deploy from github, Click on the Deploy tab, Under Deployment method click on Github. A search window will prompt you to connect to the appropriate repository. You can then choose to do a manual or automatic deployment.
+8. Now you can deploy, the simplest way is to deploy from GitHub
+    - Click on the Deploy tab, Under the Deployment method click on GitHub.
+    - A search window will prompt you to connect to the appropriate repository.
+    - You can then choose to do a manual or automatic deployment. I recommend Automatic, that way whenever a change is pushed to your main branch on your GitHub repository the Heroku application is re-deployed automatically.
 
 ### Contribution and Forking
 
@@ -783,6 +807,8 @@ back to [contents](#table-of-contents)
 - Points of reference used for making this web app were [Camden Recording Studios](https://www.camdenrecordingstudios.com/) and [Grouse Lodge](http://grouselodge.com/).
 
 ### Resources
+
+- [Django documentation](https://www.djangoproject.com/)
 
 - [Trick used for navbar icon](https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color)
 
@@ -825,6 +851,11 @@ Product Images that were sourced from Unsplash are credited below:
 10. Bottle opener  [https://unsplash.com/photos/voJB2goG0us](https://unsplash.com/photos/voJB2goG0us)
 11. Tea towel [https://unsplash.com/photos/8yIYQDR8Qr8](https://unsplash.com/photos/8yIYQDR8Qr8)
 12. Tote Bag [https://unsplash.com/photos/nKK32qJheBY](https://unsplash.com/photos/nKK32qJheBY)
+13. Wallet [https://unsplash.com/photos/9Huby3g9fN0](https://unsplash.com/photos/9Huby3g9fN0)
+14. Phone Cover [https://unsplash.com/photos/fCO3tBcnkhg](https://unsplash.com/photos/fCO3tBcnkhg)
+15. Gift Voucher 500 [https://unsplash.com/photos/Y20JJ_ddy9M](https://unsplash.com/photos/Y20JJ_ddy9M)
+16. Gift Voucher 100 [https://unsplash.com/photos/8QrPJ3Kfie4](https://unsplash.com/photos/8QrPJ3Kfie4)
+17. Gift Voucher 250 [https://unsplash.com/photos/MEL-jJnm7RQ](https://unsplash.com/photos/MEL-jJnm7RQ)
 
 ### Acknowledgements
 
